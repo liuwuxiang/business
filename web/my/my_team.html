@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>我的团队</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+	</head>
+	<body style="background: white;">
+		<div class="head">
+			<h1>我的团队</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+		
+		<!-- 团队 -->
+	    <div class="teamhead" style="height: 60px;">
+	      <img src="../../static/images/wnk_business/img_head.jpg" id="header_img" alt="" class="img">
+	      <span class="name" id="nick_name""><!--业主名称/昵称--></span>
+	      <p class="desc" id="level_name"><!--铂金会员--></p>
+	      <a href="javascript:;" class="ewm" id="ewm"></a>
+	    </div>
+	    
+	    <a style="display: block;width: 100%;height: 10px;background: #F5F5F5;"></a>
+	    
+	    <!-- Tab菜单 STR -->
+	    <div class="pubtabmenu" id="pubtabmenu">
+	      <div class="wrap">
+	        <a id="my_member_option"   class="item" onclick="listOptionInit(0)">我的会员</a>
+	        <a id="my_business_option" class="item" onclick="listOptionInit(1)">我的商户</a>
+	      </div>
+	    </div>
+	  <!-- Tab菜单 END -->
+		
+		<!-- 团队列表 -->
+	      <ul class="teamlist" id="teamlist">
+	     	<!--<li>
+		      <div class="item">
+		          <div class="left">
+		            <img src="../../static/images/wnk_business/img_head.jpg" alt="" class="img">
+		            <span class="name">飞翔的阿里</span>
+		            <p class="lev">三星级铂金会员</p>
+		          </div>
+			      <div class="right">
+			         <p class="tel">18787015223</p>
+			         <p class="time">2018-05-21 10:59:32</p>
+			       </div>
+		      </div>
+	        </li>-->
+	      </ul>
+		
+		<!-- 二维码弹出 -->
+	    <div class="ewmshow" id="ewmshow">
+	      <div class="wrap">
+	        <img src="../../static/images/wnk_business/img_head.jpg" alt="" id="ewm_header" class="img">
+	        <span class="name" id="ewm_name"><!--业主名称/昵称--></span>
+	        <p class="tel" id="ewm_tel"><!--18787015223--></p>
+	        <img src="../../static/images/wnk_business/ewm.png" alt="" id="recommend_qr_code" class="ewm">
+	        <span class="desc">扫一扫二维码加入我们</span>
+	      </div>
+	      <a href="javascript:;" class="close"></a>
+	    </div>
+	    
+	    <!-- 团队为空 -->
+	    <div class="publicnull" id="publicnull_tip">
+	      <span class="icon team"></span>
+	      <p class="text" id="request_tip">暂无数据</p>
+	    </div>
+	    
+		<!-- UI插件 -->
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js" ></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/my/my_team.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script type="text/javascript">
+		    // 显示二维码
+		    selShow("ewm","ewmshow");
+	    </script>
+	</body>
+</html>

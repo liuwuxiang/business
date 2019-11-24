@@ -1,0 +1,1075 @@
+{
+  "index.html": {
+    "resources": [
+      "web/order/orders.html",
+      "static/lib/plus/lib/jquery-2.1.4.js",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/lib/plus/js/weui.min.js",
+      "static/lib/mui/js/mui.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/main.update.js",
+      "static/js/index.js",
+      "static/lib/mui/css/mui.min.css",
+      "static/font/iconfont.css"
+    ],
+    "refer": [
+      "web/my/my.html",
+      "web/statistics/statistics.html",
+      "web/goods/commodities.html",
+      "web/order/orders.html",
+      "login.html",
+      "web/statistics/statistics2.html",
+      "web/business_legalize/legalize_tis.html",
+      "web/common/cropper.html"
+    ]
+  },
+  "web/order/orders.html": {
+    "refer": [
+      "login.html",
+      "web/order/order_detail.html",
+      "web/integral/order_confirm.html",
+      "web/my/problem_show.html",
+      "web/order/scan.html",
+      "web/order/order_detail2.html",
+      "web/order/order_detail_hotel.html"
+    ],
+    "resources": [
+      "static/images/wnk_business/scan_icon.png",
+      "static/css/order/orders.css",
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/font/iconfont.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/order/order.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/plus/lib/fastclick.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js"
+    ]
+  },
+  "login.html": {
+    "refer": [
+      "business_register.html",
+      "index.html",
+      "protocol.html",
+      "isOne.html"
+    ],
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/plus/css/jquery-weui.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/toast.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/login.js",
+      "static/lib/plus/js/jquery-weui.js",
+      "static/images/wnk_business/logo.png"
+    ]
+  },
+  "web/goods/commodities.html": {
+    "refer": [
+      "web/goods/type_manager.html",
+      "web/goods/add_commodity.html",
+      "web/goods/commodity_specifications.html",
+      "web/goods/set_commodity.html",
+      "login.html",
+      "web/add_goods/goods_type_chose.html",
+      "web/goods/add_hotel.html"
+    ],
+    "resources": [
+      "static/lib/mui/css/mui.min.css",
+      "static/css/goods/commodities.css",
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/goods/commodities.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js"
+    ]
+  },
+  "web/my/my.html": {
+    "refer": [
+      "web/my/shop_information.html",
+      "web/my/account_balance.html",
+      "login.html",
+      "web/my/account_security.html",
+      "web/integral/index.html",
+      "web/my/suggestion_feedback.html",
+      "web/my/about_us.html",
+      "web/my/problem.html",
+      "web/my/my_team.html",
+      "web/consumption_integral/consumption_integral.html",
+      "web/level_integral/level_integral.html",
+      "web/my_rose/my_rose.html",
+      "web/my/extension_system.html",
+      "web/my/doings_spread.html",
+      "web/my/message_center.html",
+      "web/level_integral/integral_send.html",
+      "web/my_tag/tag.html",
+      "web/business_legalize/legalize_tis.html",
+      "web/my/integral.html",
+      "protocol.html"
+    ],
+    "resources": [
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/common.js",
+      "static/js/common/common-mui.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/toast.js",
+      "static/js/my/my.js",
+      "static/css/my/my.css",
+      "static/css/common/common.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/hui/css/hui.css",
+      "static/images/wnk_business/icon/icon_more.svg",
+      "static/images/wnk_business/img_head.jpg"
+    ]
+  },
+  "web/my/account_balance.html": {
+    "refer": [
+      "web/my/amount_withdraw.html",
+      "login.html",
+      "web/my/account_balance_recharge.html",
+      "web/my/account_balance_withdraw_info.html"
+    ],
+    "resources": [
+      "static/css/my/account_balance.css",
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/my/account_balance.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js"
+    ]
+  },
+  "web/statistics/statistics.html": {
+    "refer": [
+      "web/statistics/order_static_detail.html",
+      "login.html"
+    ],
+    "resources": [
+      "static/css/statistics/statistics.css",
+      "static/css/add_commodity.css",
+      "static/css/statistics/bootstrap.min.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/mui/css/mui.min.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/css/common/common.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/common/common.js",
+      "static/js/statistics/statistics.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/lib/plus/js/city-picker.js",
+      "static/images/wnk_business/new_order_icon.png",
+      "static/images/wnk_business/finish_order_icon.png",
+      "static/images/wnk_business/number_seal_icon.png",
+      "static/images/wnk_business/amount_seal_icon.png"
+    ]
+  },
+  "web/integral/index.html": {
+    "refer": [
+      "web/integral/type.html",
+      "web/integral/goods.html",
+      "web/integral/order.html",
+      "login.html"
+    ],
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/css/integral/index.css",
+      "static/font/iconfont.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/common.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/integral/index.js"
+    ]
+  },
+  "web/integral/goods.html": {
+    "refer": [
+      "web/integral/goods_edit.html",
+      "login.html"
+    ],
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/css/integral/type.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/integral/goods.js"
+    ]
+  },
+  "web/my/account_security.html": {
+    "refer": [
+      "web/my/set_login_pwd.html",
+      "web/my/set_pay_pwd.html",
+      "web/my/bank_card_information.html"
+    ],
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/mui/css/mui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js"
+    ]
+  },
+  "web/integral/type.html": {
+    "refer": [
+      "web/integral/type_edit.html",
+      "login.html"
+    ],
+    "resources": [
+      "static/css/common/common.css",
+      "static/css/integral/type.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/integral/type.js"
+    ]
+  },
+  "web/my/amount_withdraw.html": {
+    "refer": [
+      "login.html"
+    ],
+    "resources": [
+      "static/lib/hui/css/hui.css",
+      "static/css/common/common.css",
+      "static/lib/plus/lib/jquery-2.1.4.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/common/common-mui.js",
+      "static/js/common/common.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/my/amount_withdraw.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/css/mui.css",
+      "static/lib/mui/css/mui.picker.css",
+      "static/lib/mui/css/mui.poppicker.css",
+      "static/lib/mui/js/mui.picker.js",
+      "static/lib/mui/js/mui.poppicker.js",
+      "static/lib/plus/lib/weui.css",
+      "static/lib/plus/css/jquery-weui.css",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.js",
+      "static/lib/plus/js/city-picker.min.js"
+    ]
+  },
+  "web/my/set_login_pwd.html": {
+    "refer": [
+      "login.html"
+    ],
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/mui/css/mui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/js/my/set_login_pwd.js",
+      "static/lib/plus/js/jquery-weui.min.js"
+    ]
+  },
+  "web/my/set_pay_pwd.html": {
+    "refer": [
+      "login.html"
+    ],
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/common/common.js",
+      "static/js/my/set_pay_pwd.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js"
+    ]
+  },
+  "web/my/problem.html": {
+    "refer": [
+      "web/my/problem_show.html",
+      "login.html"
+    ],
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/mui/css/mui.min.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/my/problem.js"
+    ]
+  },
+  "web/consumption_integral/consumption_integral.html": {
+    "refer": [
+      "web/consumption_integral/consumption_integral_forward.html",
+      "login.html",
+      "web/consumption_integral/user_integral_recharge.html"
+    ],
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/consumption_integral/consumption_integral.js"
+    ]
+  },
+  "web/level_integral/level_integral.html": {
+    "refer": [
+      "web/level_integral/level_upgrade.html",
+      "web/level_integral/integral_send.html",
+      "login.html"
+    ],
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/level_integral/level_integral.js"
+    ]
+  },
+  "web/my_rose/my_rose.html": {
+    "refer": [
+      "web/my_rose/rose_exchange.html",
+      "login.html"
+    ],
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/my_rose/my_rose.js"
+    ]
+  },
+  "business_register.html": {
+    "href": "business_register.html",
+    "resources": [
+      "static/lib/mui/css/mui.min.css",
+      "static/css/shop_information.css",
+      "static/css/add_commodity.css",
+      "static/lib/hui/css/hui.css",
+      "static/css/common/common.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/lib/upload/ajaxfileupload.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/common.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/business_register.js",
+      "static/images/wnk_business/delete_icon.png",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/goods/type_manager.html": {
+    "href": "web/goods/type_manager.html",
+    "resources": [
+      "static/lib/mui/css/mui.min.css",
+      "static/css/goods/type_manager.css",
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/goods/type_manager.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/goods/add_commodity.html": {
+    "href": "web/goods/add_commodity.html",
+    "resources": [
+      "static/lib/mui/css/mui.min.css",
+      "static/css/goods/add_commodity.css",
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/ajaxfileupload.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/goods/add_commodity.js",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js"
+    ],
+    "refer": [
+      "web/add_goods/choose_goods_tag.html",
+      "web/common/cropper.html",
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/goods/commodity_specifications.html": {
+    "href": "web/goods/commodity_specifications.html",
+    "resources": [
+      "static/css/goods/commodity_specifications.css",
+      "static/css/common/common.css",
+      "static/lib/mui/css/mui.min.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/goods/commodity_specifications.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/goods/set_commodity.html": {
+    "href": "web/goods/set_commodity.html",
+    "resources": [
+      "static/lib/mui/css/mui.min.css",
+      "static/css/add_commodity.css",
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/goods/set_commodity.js",
+      "static/js/common/ajaxfileupload.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js"
+    ],
+    "refer": [
+      "login.html",
+      "web/common/cropper.html",
+      "web/add_goods/choose_goods_tag.html"
+    ],
+    "priority": 0
+  },
+  "web/my/my_team.html": {
+    "href": "web/my/my_team.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/my/my_team.js",
+      "static/images/wnk_business/img_head.jpg"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/integral/type_edit.html": {
+    "href": "web/integral/type_edit.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/lib/plus/js/jquery-weui.js",
+      "static/lib/plus/js/weui.min.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/toast.js",
+      "static/lib/upload/ajaxfileupload.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/integral/type_edit.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/integral/goods_edit.html": {
+    "href": "web/integral/goods_edit.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.js",
+      "static/lib/plus/js/weui.min.js",
+      "static/js/common/ajaxfileupload.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/integral/goods_edit.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/integral/order.html": {
+    "href": "web/integral/order.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/integral/order.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "web/my/about_us.html": {
+    "href": "web/my/about_us.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/mui/css/mui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/lib/mui/js/mui.min.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "web/my/shop_information.html": {
+    "href": "web/my/shop_information.html",
+    "resources": [
+      "static/lib/mui/css/mui.min.css",
+      "static/css/add_commodity.css",
+      "static/css/my/shop_information.css",
+      "static/css/common/common.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/ajaxfileupload.js",
+      "static/js/common/common.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/my/shop_information.js",
+      "static/images/wnk_business/delete_icon.png",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js"
+    ],
+    "refer": [
+      "login.html",
+      "web/my/shop_information_label.html",
+      "web/common/cropper.html"
+    ],
+    "priority": 0
+  },
+  "web/my/bank_card_information.html": {
+    "href": "web/my/bank_card_information.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/js/my/bank_card_information.js",
+      "static/plus/lib/weui.min.css",
+      "static/plus/css/jquery-weui.css",
+      "static/plus/lib/jquery-2.1.4.js",
+      "static/plus/lib/fastclick.js",
+      "static/plus/js/jquery-weui.js",
+      "static/plus/js/city-picker.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/my/extension_system.html": {
+    "href": "web/my/extension_system.html",
+    "resources": [
+      "static/css/my/extension_system.css",
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/my/extension_system.js",
+      "/static/images/wnk_business/share_wxpyq.png",
+      "/static/images/wnk_business/share_weibo.png"
+    ],
+    "refer": [
+      "login.html",
+      "web/my/buy_materiel_meal.html",
+      "web/my/materiel_send_to_user.html"
+    ],
+    "priority": 0
+  },
+  "web/my/account_balance_recharge.html": {
+    "href": "web/my/account_balance_recharge.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/lib/plus/lib/fastclick.js",
+      "static/js/my/account_balance_recharge.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "web/my/problem_show.html": {
+    "href": "web/my/problem_show.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/mui/css/mui.min.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/my/problem_show.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/my/suggestion_feedback.html": {
+    "href": "web/my/suggestion_feedback.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/mui/css/mui.min.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/js/common/ajaxfileupload.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/toast.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/my/suggestion_feedback.js"
+    ],
+    "refer": [],
+    "priority": 0
+  },
+  "web/consumption_integral/consumption_integral_forward.html": {
+    "href": "web/consumption_integral/consumption_integral_forward.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/consumption_integral/consumption_integral_forward.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/level_integral/integral_send.html": {
+    "href": "web/level_integral/integral_send.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/level_integral/integral_send.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/level_integral/level_upgrade.html": {
+    "href": "web/level_integral/level_upgrade.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/css/level_integral/level_upgrade.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/lib/plus/lib/fastclick.js",
+      "static/js/level_integral/level_upgrade.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/my_rose/rose_exchange.html": {
+    "href": "web/my_rose/rose_exchange.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/my_rose/rose_exchange.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/order/order_detail.html": {
+    "href": "web/order/order_detail.html",
+    "resources": [
+      "static/css/order/my_order_detail.css",
+      "static/css/common/common.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/mui/css/mui.min.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/order/order_detail.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/integral/order_confirm.html": {
+    "href": "web/integral/order_confirm.html",
+    "resources": [
+      "static/css/common/common.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/plus/lib/weui.css",
+      "static/lib/plus/css/jquery-weui.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/integral/order_confirm.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/statistics/order_static_detail.html": {
+    "href": "web/statistics/order_static_detail.html",
+    "resources": [
+      "static/css/order/orders.css",
+      "static/css/common/common.css",
+      "static/lib/plus/lib/weui.min.css",
+      "static/lib/plus/css/jquery-weui.min.css",
+      "static/lib/hui/css/hui.css",
+      "static/lib/mui/css/mui.css",
+      "static/lib/jquery/jquery-1.9.1.min.js",
+      "static/js/common/common.js",
+      "static/lib/hui/js/hui.js",
+      "static/lib/mui/js/mui.min.js",
+      "static/js/main.js",
+      "static/js/main.check.js",
+      "static/js/common/toast.js",
+      "static/lib/plus/js/jquery-weui.min.js",
+      "static/js/statistics/order_static_detail.js"
+    ],
+    "refer": [
+      "login.html"
+    ],
+    "priority": 0
+  },
+  "web/my/doings_spread.html": {
+    "refer": [
+      "web/my/doings_spread_edit.html"
+    ],
+    "resources": []
+  },
+  "web/my/buy_materiel_meal.html": {
+    "refer": [
+      "login.html"
+    ],
+    "resources": []
+  },
+  "web/statistics/statistics2.html": {
+    "refer": [
+      "web/statistics/order_static_detail2.html",
+      "web/statistics/incomeNotes.html",
+      "web/statistics/member_management.html",
+      "login.html",
+      "web/statistics/hotel_management.html"
+    ],
+    "resources": []
+  },
+  "web/business_legalize/legalize_tis.html": {
+    "refer": [
+      "web/business_legalize/legalize.html"
+    ],
+    "resources": []
+  },
+  "web/my/message_center.html": {
+    "refer": [
+      "login.html"
+    ],
+    "resources": []
+  },
+  "web/order/scan.html": {
+    "refer": [
+      "web/order/order_detail.html",
+      "web/order/gym_card_in_out_record.html",
+      "web/order/order_make.html"
+    ],
+    "resources": []
+  },
+  "protocol.html": {
+    "refer": [
+      "business_register.html",
+      "web/level_integral/my_level.html"
+    ],
+    "resources": []
+  },
+  "isOne.html": {
+    "refer": [
+      "login.html",
+      "web/order/orders.html"
+    ],
+    "resources": []
+  },
+  "web/my/doings_spread_edit.html": {
+    "refer": [
+      "web/common/cropper.html"
+    ]
+  },
+  "web/add_goods/goods_type_chose.html": {
+    "refer": [
+      "web/goods/add_commodity.html",
+      "web/goods/type_manager.html",
+      "login.html",
+      "web/goods/add_hotel.html"
+    ]
+  },
+  "web/order/order_detail2.html": {
+    "refer": [
+      "web/order/refund_record.html",
+      "login.html",
+      "web/order/make_record.html"
+    ]
+  },
+  "web/statistics/member_management.html": {
+    "refer": [
+      "web/statistics/search.html"
+    ]
+  },
+  "web/add_goods/choose_goods_tag.html": {
+    "refer": [
+      "web/goods/business_goods_tag.html"
+    ]
+  },
+  "web/goods/add_hotel.html": {
+    "refer": [
+      "web/common/cropper.html"
+    ]
+  }
+}

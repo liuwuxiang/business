@@ -1,0 +1,243 @@
+{
+  "business_register.html": {
+    "href": "business_register.html",
+    "resources": [],
+    "refer": [],
+    "priority": 0
+  },
+  "login.html": {
+    "href": "login.html",
+    "resources": [],
+    "refer": [],
+    "priority": 0
+  },
+  "web/goods/type_manager.html": {
+    "href": "web/goods/type_manager.html",
+    "resources": [],
+    "refer": [],
+    "priority": 1
+  },
+  "web/goods/add_commodity.html": {
+    "href": "web/goods/add_commodity.html",
+    "resources": [],
+    "priority": 2
+  },
+  "web/goods/commodity_specifications.html": {
+    "href": "web/goods/commodity_specifications.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "web/goods/set_commodity.html": {
+    "href": "web/goods/set_commodity.html",
+    "resources": [],
+    "refer": [],
+    "priority": 4
+  },
+  "web/goods/commodities.html": {
+    "href": "web/goods/commodities.html",
+    "resources": [],
+    "refer": [],
+    "priority": 1
+  },
+  "web/my/my_team.html": {
+    "href": "web/my/my_team.html",
+    "resources": [],
+    "refer": [],
+    "priority": 2
+  },
+  "web/integral/type_edit.html": {
+    "href": "web/integral/type_edit.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "web/integral/type.html": {
+    "href": "web/integral/type.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "web/integral/goods_edit.html": {
+    "href": "web/integral/goods_edit.html",
+    "resources": [],
+    "refer": [],
+    "priority": 4
+  },
+  "web/integral/goods.html": {
+    "href": "web/integral/goods.html",
+    "resources": [],
+    "refer": [],
+    "priority": 4
+  },
+  "web/integral/order.html": {
+    "href": "web/integral/order.html",
+    "resources": [],
+    "priority": 5
+  },
+  "web/integral/index.html": {
+    "href": "web/integral/index.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "web/my/about_us.html": {
+    "href": "web/my/about_us.html",
+    "resources": [],
+    "priority": 4
+  },
+  "web/my/shop_information.html": {
+    "href": "web/my/shop_information.html",
+    "resources": [],
+    "refer": [],
+    "priority": 5
+  },
+  "web/my/bank_card_information.html": {
+    "href": "web/my/bank_card_information.html",
+    "resources": [],
+    "refer": [],
+    "priority": 6
+  },
+  "web/my/set_pay_pwd.html": {
+    "href": "web/my/set_pay_pwd.html",
+    "resources": [],
+    "refer": [],
+    "priority": 7
+  },
+  "web/my/set_login_pwd.html": {
+    "href": "web/my/set_login_pwd.html",
+    "resources": [],
+    "refer": [],
+    "priority": 8
+  },
+  "web/my/account_security.html": {
+    "href": "web/my/account_security.html",
+    "resources": [],
+    "refer": [],
+    "priority": 6
+  },
+  "web/my/extension_system.html": {
+    "href": "web/my/extension_system.html",
+    "resources": [],
+    "refer": [],
+    "priority": 7
+  },
+  "web/my/account_balance_recharge.html": {
+    "href": "web/my/account_balance_recharge.html",
+    "resources": [],
+    "priority": 8
+  },
+  "web/my/amount_withdraw.html": {
+    "href": "web/my/amount_withdraw.html",
+    "resources": [],
+    "refer": [],
+    "priority": 9
+  },
+  "web/my/account_balance.html": {
+    "href": "web/my/account_balance.html",
+    "resources": [],
+    "refer": [],
+    "priority": 8
+  },
+  "web/my/problem_show.html": {
+    "href": "web/my/problem_show.html",
+    "resources": [],
+    "refer": [],
+    "priority": 9
+  },
+  "web/my/problem.html": {
+    "href": "web/my/problem.html",
+    "resources": [],
+    "refer": [],
+    "priority": 9
+  },
+  "web/my/suggestion_feedback.html": {
+    "href": "web/my/suggestion_feedback.html",
+    "resources": [],
+    "priority": 10
+  },
+  "web/consumption_integral/consumption_integral_forward.html": {
+    "href": "web/consumption_integral/consumption_integral_forward.html",
+    "resources": [],
+    "refer": [],
+    "priority": 11
+  },
+  "web/consumption_integral/consumption_integral.html": {
+    "href": "web/consumption_integral/consumption_integral.html",
+    "resources": [],
+    "refer": [],
+    "priority": 11
+  },
+  "web/level_integral/integral_send.html": {
+    "href": "web/level_integral/integral_send.html",
+    "resources": [],
+    "refer": [],
+    "priority": 12
+  },
+  "web/level_integral/level_upgrade.html": {
+    "href": "web/level_integral/level_upgrade.html",
+    "resources": [],
+    "refer": [],
+    "priority": 13
+  },
+  "web/level_integral/level_integral.html": {
+    "href": "web/level_integral/level_integral.html",
+    "resources": [],
+    "refer": [],
+    "priority": 12
+  },
+  "web/my_rose/rose_exchange.html": {
+    "href": "web/my_rose/rose_exchange.html",
+    "resources": [],
+    "refer": [],
+    "priority": 13
+  },
+  "web/my_rose/my_rose.html": {
+    "href": "web/my_rose/my_rose.html",
+    "resources": [],
+    "refer": [],
+    "priority": 13
+  },
+  "web/my/my.html": {
+    "href": "web/my/my.html",
+    "resources": [],
+    "refer": [],
+    "priority": 2
+  },
+  "web/order/order_detail.html": {
+    "href": "web/order/order_detail.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "web/integral/order_confirm.html": {
+    "href": "web/integral/order_confirm.html",
+    "resources": [],
+    "refer": [],
+    "priority": 4
+  },
+  "web/order/orders.html": {
+    "href": "web/order/orders.html",
+    "resources": [],
+    "refer": [],
+    "priority": 3
+  },
+  "web/statistics/order_static_detail.html": {
+    "href": "web/statistics/order_static_detail.html",
+    "resources": [],
+    "refer": [],
+    "priority": 4
+  },
+  "web/statistics/statistics.html": {
+    "href": "web/statistics/statistics.html",
+    "resources": [],
+    "refer": [],
+    "priority": 4
+  },
+  "index.html": {
+    "href": "index.html",
+    "resources": [],
+    "refer": [],
+    "priority": 0
+  }
+}

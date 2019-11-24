@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>图片剪裁</title>
+		<meta name="keywords"    content="">
+		<meta name="description" content="">
+		<meta name="copyright"   content="" />
+		<meta name="viewport"    content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes"          name="apple-mobile-web-app-capable">
+		<meta content="black"        name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/css/common/common.css"        />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css"          />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css"          />
+		<link rel="stylesheet" href="../../static/font/iconfont.css"            />
+		
+		
+
+
+		<style>
+			#barcode {
+				width: 100%;
+				position: absolute;
+				top: .88rem;
+				text-align: center;
+				display: inline;
+				/*border: 1px red solid;*/
+			}
+			
+			/* 限制图像宽度以避免容器溢出 */
+			 img {
+			   max-width： 100 ％ ; /*这条规则非常重要，请不要忽视这一点！*/ 
+			}
+		</style>
+		
+	</head>
+
+	<body class="bgw">
+		<div class="head">
+			<h1 >图片剪裁</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+			<a href="javascript:void(0);" id="ok" class="submit">确定</a>
+		</div>
+		<div class="h88"></div>
+		
+		<div id="barcode">
+			<img id="image" src="file:///storage/emulated/0/Android/data/io.dcloud.HBuilder/apps/HBuilder/doc/1543038306118.jpg">
+		</div>
+		
+		
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js" ></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.4.3/cropper.css"/>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.4.3/cropper.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"           ></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.js"             ></script>
+		<script type="text/javascript" src="../../static/js/main.js"                    ></script>
+		 <script type="text/javascript" src="../../static/js/main.check.js"              ></script> 
+		 <script type="text/javascript" src="../../static/lib/hui/js/hui.js" ></script>
+		 <script type="text/javascript" src="../../static/js/common/toast.js" ></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"               ></script>
+		<script type="text/javascript" src="../../static/js/common/cropper.js"          ></script>
+	</body>
+
+</html>

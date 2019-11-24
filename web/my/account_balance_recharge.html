@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>余额充值</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+	</head>
+	<body style="background: white;">
+		
+		<div class="head">
+			<h1>余额充值</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+		
+		<!-- 表单STR -->
+		<div class="pubform">
+		    <form>
+		    	<div class="fgroup">
+			        <label class="fitem">
+			          <span class="fname">充值金额</span>
+			          <input class="ftext" id="withdraw_number" type="number" placeholder="请填写充值金额" style="line-height: .88rem;">
+			        </label>
+			        <label class="fitem">
+			          <span class="fname">到账金额</span>
+			          <p class="finfo">到账<span id="receipts_amount">0</span>元</p>
+			        </label>       
+			      </div>
+		        <div class="ftitle">支付方式</div>
+		        <div class="fgroup">
+		            <label class="fradio" style="height: 50px;">
+		                <span class="icon wxpay"></span>
+		                <span class="fname">微信支付</span>
+		                <input type="radio" name="pay" id="wx_pay_radio" checked>
+		                <span class="status"></span>
+		            </label>
+		            
+		            <!--<label class="fradio" style="height: 50px;">
+		                <span class="icon wxpay"></span>
+		                <span class="fname">支付宝支付</span>
+		                <input type="radio" name="pay" id="zhifubao_pay_radio">
+		                <span class="status"></span>
+		            </label>-->
+		        </div>
+		        <div class="fhandle">
+		            <a class="fsubmit" onclick="arrgenHandelLevel()" style="margin-top: 10px;">充值</a>
+		        </div>
+		    </form>
+		</div>
+		<!-- 表单END -->
+		
+		<!-- UI插件 -->
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js" ></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/lib/fastclick.js"></script>
+		<script type="text/javascript" src="../../static/js/my/account_balance_recharge.js" ></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script type="text/javascript">
+		    $(function(){
+		        $('#withdraw_number').bind('input propertychange', function() {
+		            inputChange($(this).val());
+		        });
+		
+		    })
+		  </script>
+	</body>
+</html>

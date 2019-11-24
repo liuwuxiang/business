@@ -1,0 +1,112 @@
+.order_info {
+	margin-top: .88rem;
+	background-color: #0C90FF;
+	padding-top: .3rem;
+	width: 100%;
+}
+
+.info-business-confirm {
+	color: #FEFFFF;
+	margin-bottom: .1rem;
+	text-align: center;
+	overflow: auto;
+}
+.clear{
+	clear:both
+}
+
+.info-business-confirm-top-class {
+	width: 100%;
+	margin-bottom: .2rem;
+}
+
+.info-business-confirm-title {
+	font-size: .55rem;
+	padding-left: .4rem;
+	padding-top: .2rem;
+	width: 50%;
+	float: left;
+}
+
+.info-business-confirm ul {
+	position: inherit;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	margin-left: .2rem;
+}
+
+.info-business-confirm li {
+	border: 1px #CEE8FF solid;
+	float:left;
+	margin-left: .2rem;
+	margin-top: -.4rem;
+	padding-left: .2rem;
+	padding-right: .2rem;
+	padding-top: .05rem;
+	padding-bottom: .05rem;
+	border-radius: .15rem;
+}
+
+.info-business-confirm-tip {
+	font-size: .25rem;
+}
+
+.order_other {
+	margin-left: .5rem;
+}
+
+.order_other>p {
+	color: #FEFFFF;
+}
+
+.order_other_title {
+	font-size: .5rem;
+}
+
+.order_other_tip {
+	font-size: .3rem;
+}
+
+.commodity_name_tag {
+	color: #000000;
+
+}
+
+.info-block {
+	border-radius: 10px;
+	margin-left: 2%;
+	margin-right: 2%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.user_info > div > div > .weui-form-preview__value {
+	color: #000 !important;
+}
+
+.weui-form-preview__item  img {
+	top: 5px;
+	margin-right: 3px;
+	margin-left: 3px;
+	width: .5rem;
+	height: .5rem;
+}
+
+#income_tip{
+	font-size: .22rem;
+	color: #9B9B9B;
+}
+
+.orderId_copy {
+	color: #000;
+	border: 1px #000 solid;
+	padding-left: .2rem;
+	padding-right: .2rem;
+	margin-left: .2rem;
+	border-radius: .2rem;
+}
+
+.order-info-hotel  .weui-form-preview__value {
+	text-align: left;
+}

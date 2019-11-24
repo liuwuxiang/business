@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>订单详情</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css" />
+		<link rel="stylesheet" href="../../static/css/order/my_order_detail.css" />
+		<link rel="stylesheet" href="../../static/css/order/order_detail_hotel.css" />
+
+	</head>
+
+	<body>
+		<div class="head">
+			<h1>订单详情</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+
+		<div  class="order_info" >
+			
+			<div id="order_state_div_1" style="display: none;" class="info-business-confirm">
+				<div class="info-business-confirm-top-class">
+					<div>
+						<span class="info-business-confirm-title">等待商家确认</span>
+					</div>
+					<div> 
+						<ul>
+							<li id="submit_accepted">接受</li>
+							<li id="submit_cancel" >拒绝</li>
+							<div class="clear"></div> 
+						</ul>
+					</div>
+					 <div class="clear"></div> 
+				</div>
+				<div>
+					<span class="info-business-confirm-tip">请在 <span id="info-business-confirm-tip">10</span> 分钟内确认订单,超时将自动拒绝并退款</span>
+				</div>
+			</div>
+
+			<div id="order_state_div_2" class="order_other" style="display: none;">
+				<p class="order_other_title" id="order_state_div_2_title">房间已经确认</p>
+				<p class="order_other_tip"   id="order_state_div_2_tip">如有变动,请联系用户处理</p>
+			</div>
+
+		</div>
+
+		<div class="top_div info-block">
+			<div class="li_commodites_div" id="li_commodites_div" style="margin-bottom: 0;">
+				<ul class="commodities_ul" id="commodities_ul">
+					<li>
+						<a class="commodity_name_tag" id="goods_name">精品大床房</a>
+					</li>
+					<li>
+						<a class="commodity_name_tag" id="register_str" style="width: 100%;">1月16(周三)-1月18(周五)共2晚2间</a>
+					</li>
+				</ul>
+				<div class="weui-form-preview__bd order-info-hotel">
+					<div class="weui-form-preview__item">
+						<label class="weui-form-preview__label">预计到店</label>
+						<span class="weui-form-preview__value" id="register_time">1月16日 15:00之前</span>
+					</div>
+
+					<div class="weui-form-preview__item">
+						<label class="weui-form-preview__label">入住人</label>
+						<span class="weui-form-preview__value" id="register_name"><!-- 张三,李四 --></span>
+					</div>
+
+					<div class="weui-form-preview__item" id="register_mobile_div">
+						<label class="weui-form-preview__label">联系手机</label>
+						<span class="weui-form-preview__value" id="register_mobile"><!-- 15891891437<img src="../../static/images/wnk_business/tel.png"> --></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="weui-form-preview info-block">
+			<ul class="commodities_ul">
+				<li>
+					<a class="commodity_name_tag">房费</a>
+				</li>
+			</ul>
+			<div class="weui-form-preview__bd" id="order_info_ul">
+				<!-- <div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">2019-01-16不含早</label>
+					<span class="weui-form-preview__value">2 x ￥159.00</span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">2019-01-17不含早</label>
+					<span class="weui-form-preview__value">2 x ￥159.00</span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">总价</label>
+					<span class="weui-form-preview__value" style="color: #000; font-size: .35rem;"> ￥636.00</span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">通用积分</label>
+					<span class="weui-form-preview__value">- ￥30.00</span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">用户实付款</label>
+					<span class="weui-form-preview__value" style="color: red; font-size: .35rem;">￥600.00</span>
+				</div> -->
+			</div>
+			</ul>
+		</div>
+		
+		<div class="weui-form-preview info-block">
+			<ul class="commodities_ul">
+				<li>
+					<a class="commodity_name_tag">订单信息</a>
+				</li>
+			</ul>
+			<div class="weui-form-preview__bd order-info-hotel">
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">订单号</label>
+					<span class="weui-form-preview__value" id="order_info_id"><!-- 00000000000000 --></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">下单时间</label>
+					<span class="weui-form-preview__value" id="order_info_submit_time"><!-- 2018-11-12 16:40 --></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">付款时间</label>
+					<span class="weui-form-preview__value" id="order_info_pay_time"><!-- 2018-11-12 16:40 --></span>
+				</div>
+				<!-- <div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">微信交易号</label>
+					<span class="weui-form-preview__value">00000000000000</span>
+				</div> -->
+			</div>
+			</ul>
+		</div>
+		
+		<div class="weui-form-preview info-block" id="refund_div">
+			<ul class="commodities_ul">
+				<li>
+					<a class="commodity_name_tag">退款信息</a>
+				</li>
+			</ul>
+			<div class="weui-form-preview__bd order-info-hotel">
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">退款时间</label>
+					<span class="weui-form-preview__value" id="refund_time"><!-- 2018-11-12 16:40 --></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">退款状态</label>
+					<span class="weui-form-preview__value">成功</span>
+				</div>
+			</div>
+			</ul>
+		</div>
+		
+		<div class="weui-form-preview info-block user_info order-info-hotel">
+			<div class="weui-form-preview__bd">
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">等级积分</label>
+					<span class="weui-form-preview__value" id="level_less" ><!-- 减少699.60 > --></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">我的账户</label>
+					<span class="weui-form-preview__value" id="income"><!-- 待入账 699.60 > --></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label" id="income_tip">费用将在确认订单后到账</label>
+				</div>
+			</div>
+			</ul>
+		</div>
+
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script type="text/javascript" src="../../static/js/order/order_detail_hotel.js"></script>
+	</body>
+
+</html>

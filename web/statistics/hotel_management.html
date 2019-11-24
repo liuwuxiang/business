@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>房态管理</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.min.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.picker.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/css/statistics/hotel_management.css" />
+		
+	</head>
+
+	<body class="bgw" style="height: 100%!important;background-color: white!important;">
+		<!-- 头部STR -->
+		<div class="head">
+			<h1 id="title_tag">房态管理</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+
+		<div class="tip_div">
+			<li>x间:在售的预留房间库存数量</li>
+			<li><img src="../../static/images/wnk_business/delete.png"><span>:已关闭 可点击格子开启</span></li>
+			<li>&nbsp;-&nbsp;&nbsp;: 无限库存</li>
+		</div>
+
+		<div style="overflow:auto;width:100%">
+			<table width="auto" style="white-space:nowrap">
+				<thead>
+					<tr>
+						<!-- <th id="date_select">
+							<p>2019年</p>
+							<p>01月</p>
+							<div><img src="../../static/images/wnk_business/down_arrow.png"></div>
+						</th>
+						<th>精品大床房</th>
+						<th>精品大床房</th>
+						<th>精品大床房</th>
+						<th>精品大床房</th>
+						<th>精品大床房</th>
+						<th>精品大床房</th>
+						<th>精品大床房</th> -->
+					</tr>
+				</thead>
+				<tbody id="table-content">
+					<!-- <tr data-date="2019-01-17">
+						<td class="td-one td-days">
+							<p>01-17</p>
+							<p>周四</p>
+							<p>今天</p>
+						</td>
+						<td class="td-number" data-goods-id="1" data-goods-name="精品大床房">2间</td>
+						<td>-</td>
+						<td class="td-number" data-goods-id="1" data-goods-name="精品大床房">2间</td>
+						<td class="td-number" data-goods-id="1" data-goods-name="精品大床房">2间</td>
+						<td data-goods-id="1" data-goods-name="精品大床房"><img src="../../static/images/wnk_business/delete.png"></td>
+						<td class="td-number" data-goods-id="1" data-goods-name="精品大床房">2间</td>
+						<td class="td-number" data-goods-id="1" data-goods-name="精品大床房">2间</td>
+					</tr> -->
+
+				</tbody>
+			</table>
+		</div>
+
+		<div id="input-div" style="display: none;">
+			<form>
+				<span id="popUp_title">精品大床房 2019-01-10</span>
+				<input id="inventory" type="number" placeholder="请输入房间库存数量" />
+				<ul>
+					<li id="inpit_customize">自定义</li>
+					<li id="input_max">无限</li>
+					<li id="input_close">关闭</li>
+				</ul>
+				<a href="javascript:void(0);" id="input_ok">确定</a>
+			</form>
+		</div>
+
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.picker.all.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.poppicker.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script type="text/javascript" src="../../static/js/statistics/hotel_management.js"></script>
+	</body>
+
+</html>

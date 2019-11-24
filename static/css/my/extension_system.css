@@ -1,0 +1,150 @@
+body,html{
+	background: white;
+}
+
+.qr_code_div{
+	height:100%;
+	width:100%;
+	position:fixed;
+	/*background: #87CEEB;*/
+	text-align: center;
+	overflow: hidden;
+	background:url('../../images/wnk_business/qr_code_background.png');
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale');  
+	-moz-background-size:100% 100%;  
+        background-size:100% 100%; 
+    display: none;
+}
+
+#qr_code_name{
+	display: block;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-size: 18px;
+	color: #696969;
+	
+	margin-top: 50px;
+	margin-bottom: 5px;
+}
+
+#qr_code_tip{
+	margin-top: 5px;
+	font-size: 14px;
+	display: block;
+	width: 100%;
+	height: 16px;
+	line-height: 16px;
+	color: #696969;
+}
+
+.qr_code_div img{
+	display: block;
+	width: 60%;
+	height: auto;
+	margin-left: 20%;
+	margin-top: 140px;
+}
+
+.extension_materiel_div{
+	width: 100%;
+	height: auto;
+	/*display: none;*/
+	overflow: hidden;
+}
+
+.my_materiel_div{
+	width: 100%;
+	height: auto;
+	display: none;
+	overflow: hidden;
+}
+
+.business_type_ul{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background: white;
+}
+
+.business_type_ul_li{
+    width: 98%;
+    height: auto;
+    list-style: none;
+    text-align: center;
+    overflow: hidden;
+    margin-bottom: 10px;
+    background: white;
+    margin-left: 1%;
+    margin-top: 1px;
+    overflow: hidden;
+}
+
+.business_type_li_div{
+    width: 100%;
+    height: 110px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.li_background_img{
+    width: 100%;
+    height: 110px;
+    border-radius: 8px;
+}
+
+.li_top_div{
+    width: 95%;
+    height: 48px;
+    margin-top: -110px;
+    margin-left: 2.5%;
+}
+
+.li_top_div img{
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
+    float: left;
+}
+
+.li_top_div a{
+    display: block;
+    width: auto;
+    height: 48px;
+    line-height: 48px;
+    text-align: left;
+    margin-left: 10px;
+    float: left;
+    color: white;
+    font-size: 16px;
+}
+
+.surplus_tip{
+    display: block;
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: 13px;
+    background: #FF8C00;
+    float: right;
+    right: 10px;
+    border-radius: 5px;
+}
+
+.surplus_tip2{
+	display: block;
+    width: 90%;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 5%;
+    text-align: right;
+    color: white;
+    font-size: 15px;
+    margin-top: 28px;
+}

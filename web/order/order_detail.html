@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>订单详情</title>
+		<meta name="keywords"    content="">
+		<meta name="description" content="">
+		<meta name="copyright"   content="" />
+		<meta name="viewport"    content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes"          name="apple-mobile-web-app-capable">
+		<meta content="black"        name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.css"  />-->
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.css"         />
+		<link rel="stylesheet" href="../../static/css/common/common.css"         />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css"           />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css"           />
+		<link rel="stylesheet" href="../../static/css/order/my_order_detail.css" />
+
+	</head>
+
+
+	<body>
+		<div class="head">
+			<h1>订单详情</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+			<a href="javascript:void(0);" id="submit" class="submit" style="display: none;">使用</a>
+		</div>
+		<div class="h88"></div>
+		
+		<div class="top_div">
+			<div class="top_business_div" onclick="joinWnkBusinessHome()">
+				<a id="business_name">万达国际影城(奥体店)</a>
+			</div>
+			<div class="li_commodites_div" id="li_commodites_div">
+				<a class="commodities_number_tag" id="commodity_number_tag">商品(10)</a>
+				<ul class="commodities_ul" id="commodities_ul">
+					<li>
+						<a class="commodity_name_tag">美式奥尔良鸡腿原味咖喱饭</a>
+						<a class="commodity_number_tag">x1</a>
+						<a class="price_tag">35.00</a>
+					</li>
+					<li>
+						<a class="commodity_name_tag">美式奥尔良鸡腿原味咖喱饭</a>
+						<a class="commodity_number_tag">x1</a>
+						<a class="price_tag">35.00</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="order_information_div">
+			<a id="order_no_tag">订单号：</a>
+			<a id="line_time_tag">下单时间：</a>
+			<a id="pay_time_str">付款时间：</a>
+			<a id="pay_way_str">支付方式：</a>
+			<a id="count_amount_tag">总价：</a>
+		</div>
+		
+
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.js"    ></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"           ></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"             ></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.js"             ></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"            ></script>
+		<script type="text/javascript" src="../../static/js/main.js"                    ></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"              ></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"               ></script>
+		<script type="text/javascript" src="../../static/js/order/order_detail.js"      ></script>
+	</body>
+
+</html>

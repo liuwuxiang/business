@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>首页</title>
+		<link rel="stylesheet" href="./static/lib/plus/css/jquery-weui.css" />
+		<link rel="stylesheet" href="./static/lib/plus/lib/weui.css" />
+		<link rel="stylesheet" href="./static/lib/mui/css/mui.css" />
+		<link rel="stylesheet" href="./static/font/iconfont.css" />
+		<style>
+			img{
+				width: 100%;
+				height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="mui-content" id="content">
+			<div class="mui-slider mui-fullscreen">
+				<div class="mui-slider-group">
+					
+					<div class="mui-slider-item" >
+						<a href="#">
+							<img class=".guide-img" src="static/images/wnk_business/home1.jpg" />
+							</a> 
+					</div>
+					
+					<div class="mui-slider-item" >
+						<a href="#">
+							<img class=".guide-img" src="static/images/wnk_business/home2.jpg" />
+							</a>
+					</div>
+					
+					<div class="mui-slider-item" id="last" > 
+						<a href="#">
+							<img  class=".guide-img" src="static/images/wnk_business/home3.jpg" />
+							</a>
+					</div>
+					
+				</div>
+				
+				<div class="mui-slider-indicator">
+					<div class="mui-indicator mui-active"></div>
+					<div class="mui-indicator"></div>
+					<div class="mui-indicator"></div>
+				</div>
+				
+			</div> 
+		</div>
+
+		<script type="text/javascript" src="./static/lib/plus/lib/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="./static/lib/plus/js/jquery-weui.js"></script>
+		<script type="text/javascript" src="static/lib/plus/js/weui.min.js"></script>
+		<script type="text/javascript" src="./static/lib/mui/js/mui.js"></script>
+		<script type="text/javascript" src="static/js/main.js"></script>
+		<!--<script type="text/javascript" src="./static/js/navigator.js"></script>-->
+		<script>
+			mui.init();
+			mui.plusReady(function(){
+				mui.ready(function(){
+					// 设置扫描区域高度
+					// 获取手机屏幕高度
+					var sh = plus.navigator.getStatusbarHeight();
+					var h = plus.screen.resolutionHeight;
+					var w = plus.screen.resolutionWidth;
+					var imgs = document.getElementsByTagName('img')
+					$('#content').css('height',h - 0);
+					for(var i = 0, len = imgs.length; i < len; i++) {
+						imgs[i].style.height = (h - 0) + "px";
+						imgs[i].style.width = w + "px";
+					}
+					
+					//获得slider插件对象
+					var gallery = mui('.mui-slider');
+					gallery.slider({
+					  interval:0//自动轮播周期，若为0则不自动播放，默认为0；
+					});
+					document.getElementById('last').addEventListener('swipeleft',function(){
+						plus.storage.setItem("isOne","true");
+						mMain.gotoLogin();
+					})
+					
+					setTimeout(function(){
+						// 关闭雪花
+						plus.navigator.closeSplashscreen();
+					},500);
+					
+				})
+			})
+		</script>
+	</body>
+
+</html>

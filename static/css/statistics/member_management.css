@@ -1,0 +1,78 @@
+/* screening */
+
+.member_list {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: white;
+}
+
+.member_list_ul {
+	width: 96%;
+	margin: .15rem 2%;
+}
+
+.member_list_ul .member_list_li {
+	width: 100%;
+	height: auto;
+	border-radius: 10px;
+	background: #F2F2F2;
+	padding: .15rem;
+	margin-bottom: .2rem;
+	display: flex;
+	align-items: flex-start;
+}
+
+.member_list_li>img {
+	width: 1rem;
+	height: 1rem;
+	margin: 0 .1rem;
+}
+
+.member_list_li .member_list_info {
+	width: 100%;
+	height: auto;
+	margin: 0 .1rem;
+	text-align: start;
+}
+
+.member_list_info .member_list_base_info {
+	display: flex;
+	align-items: center;
+}
+
+.member_list_base_info .member_name {
+	display: inline-block;
+	color: black;
+	font-size: .38rem;
+	margin-right: .1rem;
+}
+
+.member_list_base_info .member_sex {
+	display: inline-block;
+	width: .45rem;
+	height: .45rem;
+	margin: 0 .1rem;
+}
+
+.member_list_base_info .member_phone {
+	display: inline-block;
+	color: #737373;
+	font-size: .335rem;
+	margin: 0 .1rem;
+}
+
+.member_list_info .member_num_fitness {
+	color: #737373;
+	display: inline-block;
+	font-size: .335rem;
+	margin: .08rem 0;
+}
+
+.member_list_info .member_days_remaining {
+	color: #737373;
+	display: block;
+	font-size: .335rem;
+	margin-top: .08rem;
+	text-align: end;
+}

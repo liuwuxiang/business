@@ -1,0 +1,95 @@
+a{
+	font-size: 15px !important;
+}
+
+label{
+	font-size: 15px !important;
+}
+
+span{
+	font-size: 15px !important;
+}
+
+.refund_button {
+	border-radius: inherit;
+	width: 100%;
+}
+
+.refund_button_div {
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	z-index: 999;
+}
+
+.refund_tip {
+	width: 100%;
+	height: .7rem;
+	font-size: .3rem;
+	line-height: .7rem;
+	text-align: center;
+	background-color: #FEF6DF;
+	color: #D29B4B;
+}
+
+label>div>p {
+	color: #000;
+}
+
+.refund_button_div>div {
+	background-color: white;
+	height: .5rem;
+	width: 100%;
+	line-height: .5rem;
+}
+
+.refund_button_div>div>span {
+	display: block;
+	font-size: .25rem;
+	padding: .1rem;
+	position: relative;
+	top: -.68rem;
+	left: .3rem;
+}
+
+.refund_button_div>div>img {
+	margin-top: .05rem;
+	width: .4rem;
+	height: .4rem;
+}
+
+.weui-check__label {
+	padding-bottom: 0;
+}
+
+.refund_number_div {
+	text-align: right !important;
+	float: right;
+}
+			
+.refund_number_div li {
+	float: right;
+	margin-left: .1rem;
+}
+
+.refund_number_div a {
+	display: block;
+	height: .6rem;
+	width: .6rem;
+	line-height: .6rem;
+	text-align: center;
+	border: 1px #ccc solid;
+	color: #000;
+}
+			
+.refund_number_div input {
+	display: block;
+	height: .6rem;
+	width: 1rem;
+	padding: 0 !important;
+	line-height: .6rem;
+	text-align: center;
+	border: 1px #ccc solid;
+	border-radius: inherit;
+	color: #000;
+}

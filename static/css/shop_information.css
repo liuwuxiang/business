@@ -1,0 +1,36 @@
+body{
+	background: #EEEEEE !important;
+}
+
+.lunbo_photo_ul{
+	width: 96%;
+	height: auto;
+	overflow: hidden !important;
+	padding: 0 !important;
+	margin-left: 2%;
+}
+
+.lunbo_photo_ul li{
+	width: 100% !important;
+	height: auto !important;
+	list-style: none !important;
+	text-align: center !important;
+	cursor: pointer !important;
+	overflow: hidden !important;
+	margin-top: 5px !important;
+}
+
+.photo_img{
+	width: 100%;
+	height: auto;
+}
+
+.delete_button{
+	display: block;
+	width: 30px;
+	height: auto;
+	position: absolute;
+	z-index: 9999;
+	top: 5px;
+	right: 5px;
+}

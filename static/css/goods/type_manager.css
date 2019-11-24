@@ -1,0 +1,61 @@
+body{
+	background: #EEEEEE !important;
+}
+
+.type_ul{
+	width: 100%;
+	height: auto;
+	overflow: hidden !important;
+	padding: 0 !important;
+}
+
+.type_ul li{
+	width: 97% !important;
+	height: auto !important;
+	list-style: none !important;
+	text-align: center !important;
+	cursor: pointer !important;
+	overflow: hidden !important;
+	background: white !important;
+	margin-top: 10px;
+	margin-left: 1.5%;
+	border: solid #EEEEEE 1px;
+}
+
+.type_name{
+	display: block;
+	width: 48%;
+	height: auto;
+	line-height: 35px;
+	text-align: left;
+	font-size: 16px;
+	margin-left: 2%;
+	float: left;
+}
+
+.button_div{
+	width: 48%;
+	height: 35px;
+	float: left;
+	text-align: right;
+}
+
+.button_div input[type=button]{
+	display: block;
+	width: 40%;
+	height: 33px;
+	float: right;
+	border: 0;
+	-webkit-appearance: none;
+	border-radius: 3px;
+	margin-left: 2%;
+	color: white;
+	font-size: 15px;
+	background: #1E91FB;
+	line-height: 0;
+	margin-top: 1px;
+}
+
+.delete_button{
+	background: red !important;
+}

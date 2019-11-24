@@ -1,0 +1,32 @@
+#xieyi_checkbox{
+	display:block;
+	width: auto;
+	height: 30px;
+	float: left;
+	margin-left: 4%;
+}
+
+#ruzhu_xieyi{
+	display:block;
+	float: left;
+	width: auto;
+	height:30px;
+	line-height:30px;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	margin-left:2%;
+}
+
+#read_xieyi{
+	display:block;
+	float: left;
+	width: auto;
+	height:30px;
+	line-height:30px;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	margin-left:2%;
+	text-decoration:underline;
+}

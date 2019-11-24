@@ -1,0 +1,33 @@
+.header {
+	text-align: center;
+	margin-top: .4rem;
+}
+
+.analysis_record {
+	list-style: none;
+	float: left;
+	width: 32%;
+	height: 2rem;
+	text-align: center;
+	line-height: .6rem;
+	padding-top: .45rem;
+	color: #000000;
+}
+
+.weui-cells__title{
+	margin: 0;
+}
+
+table {
+	width: 100%;
+	height: auto;
+	border: 1px #000 solid;
+}
+
+
+th,td {
+	width: 33%;
+	height: auto;
+	border: 1px #000 solid;
+	text-align: center;
+}

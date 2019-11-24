@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>系统消息</title>
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/css/my/message_center.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+
+		<style type="text/css">
+			body,
+			html {
+				min-height: 100%;
+			}
+			#recommend_huodong span{
+				width: 10px;
+				height: 10px;
+				border-radius: 5px;
+				background: red;
+				position: absolute;
+				left: 62px;
+				top: 7px;
+				display: none;
+			}
+			
+			#system_message span{
+				width: 10px;
+				height: 10px;
+				border-radius: 5px;
+				background: red;
+				position: absolute;
+				left: 62px;
+				top: 7px;
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>系统消息</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<!-- Tab菜单 STR -->
+		<div class="pubtabmenu" id="pubtabmenu">
+			<div class="wrap">
+				<a id="recommend_huodong" class="item" onclick="listOptionInit(0)">推广活动<span id="recommend_huodong_span"></span></a>
+				<a id="system_message"    class="item" onclick="listOptionInit(1)">系统消息<span id="system_message_span"></span></a>
+			</div>
+		</div>
+
+		<!-- 明细STR -->
+		<div class="condetaile">
+			<ul class="system_message_list" id="my_message_ul">
+				<!--<li>
+					<a class="system_message_title">测试消息</a>
+					<a class="system_message_content">测试消息测试消息测试消息，用于测试</a>
+					<a class="system_message_time">2017-09-10 16:30:20</a>
+				</li>-->
+			</ul>
+		</div>
+		<!-- 明细END -->
+
+		<!-- 积分为空 -->
+		<div class="publicnull" id="publicnull_tip">
+			<span class="icon jf"></span>
+			<p class="text" id="request_tip">暂无消息</p>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../../static/js/common/common.js"></script>
+	<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+	<script type="text/javascript" src="../../static/lib/mui/js/mui.js" ></script>
+	<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+	<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.js" ></script>
+	<script type="text/javascript" src="../../static/lib/plus/js/weui.min.js" ></script>
+	<script type="text/javascript" src="../../static/js/main.js" ></script>
+	<script type="text/javascript" src="../../static/js/main.check.js" ></script>
+	<script type="text/javascript" src="../../static/js/my/message_center.js"></script>
+
+</html>

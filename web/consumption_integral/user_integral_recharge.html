@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>用户积分充值</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+	</head>
+	<body>
+		<div class="head">
+			<h1>用户积分充值</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+		
+		  <!-- 通用表单 -->
+		  <div class="pubform">
+		    <form>
+		      <div class="fgroup">
+		      	<label class="fitem">
+		          <span class="fname">用户标识</span>
+		          <input class="ftext" id="user_mobile" type="number" placeholder="请填写用户手机号">
+		        </label>
+		        <label class="fitem">
+		          <span class="fname">充值积分</span>
+		          <input class="ftext" id="withdraw_number" type="number" placeholder="请填写充值积分个数">
+		        </label>
+		        <label class="fitem">
+		          <span class="fname">商家积分</span>
+		          <p class="finfo">可获得<span id="business_integral">0</span>个商家积分</p>
+		        </label> 
+		        <label class="fitem">
+		          <span class="fname">平台积分</span>
+		          <p class="finfo">可获得<span id="platform_integral">0</span>个平台积分</p>
+		        </label>       
+		      </div>
+		      <div class="fhandle">
+		        <a class="fsubmit" id="fsubmit" onclick="submitRecharge()">充值</a>
+		      </div>
+		    </form>
+		  </div>
+		
+		<!-- UI插件 -->
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/consumption_integral/user_integral_recharge.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		
+		
+		<script type="text/javascript">
+		    $(function(){
+		        $('#withdraw_number').bind('input propertychange', function() {
+		            inputChange($(this).val());
+		        });
+		
+		    })
+		  </script>
+	</body>
+</html>

@@ -1,0 +1,326 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>修改商品</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.min.css" />
+		<link rel="stylesheet" href="../../static/css/goods/add_commodity.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/css/my/shop_information.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />
+		<style>
+			textarea,
+			input {
+				font-size: .8rem !important;
+			}
+			
+			.guige_name {
+				width: 20% !important;
+			}
+			
+			.guige_price {
+				width: 20% !important;
+				position: absolute;
+				left: 25%;
+				top: 0rem;
+			}
+			
+			.guige a {
+				position: absolute;
+				left: 50%;
+				top: 0rem;
+				margin-top: .1rem;
+			}
+			
+			.weui-cell {
+				padding: 10px 15px !important;
+				position: relative !important;
+				display: -webkit-box !important;
+				display: -webkit-flex !important;
+				display: flex !important;
+				-webkit-box-align: center !important;
+				-webkit-align-items: center !important;
+				align-items: center !important;
+			}
+			
+			.weui-input {
+				width: 100% !important;
+				border: 0 !important;
+				outline: 0 !important;
+				-webkit-appearance: none !important;
+				background-color: transparent !important;
+				font-size: inherit !important;
+				color: inherit !important;
+				height: 1.47058824em !important;
+				line-height: 1.47058824 !important;
+				margin-bottom: 0 !important;
+			}
+			
+			.weui-cell_switch {
+				padding-top: 6.5px !important;
+				padding-bottom: 6.5px !important;
+			}
+			
+			.weui-cell_switch>.weui-cell__bd {
+				line-height: 1.47058824;
+				font-size: 17px;
+				padding-left: 15px;
+				text-align: left;
+			}
+			
+			.weui-cells__title {
+				margin-top: .77em !important;
+				margin-bottom: .3em !important;
+				padding-left: 15px !important;
+				padding-right: 15px !important;
+				color: #999 !important;
+				font-size: 14px !important;
+			}
+			
+			.weui-cells__title+.weui-cells {
+				margin-top: 0 !important;
+			}
+			
+			.hide_wnk {
+				display: none !important;
+			}
+			
+			.show_wnk {
+				display: flex !important;
+			}
+			
+			.lunbo_photo_ul {
+				width: 96%;
+				height: auto;
+				overflow: hidden !important;
+				padding: 0 !important;
+				margin-left: 2%;
+			}
+			
+			.lunbo_photo_ul li {
+				width: 100% !important;
+				height: auto !important;
+				list-style: none !important;
+				text-align: center !important;
+				cursor: pointer !important;
+				overflow: hidden !important;
+				margin-top: 5px !important;
+			}
+			
+			#lunbo_photo_ul img {
+				height: 4rem;
+				width: 4rem;
+			}
+			
+			#lunbo_photo_ul>li {
+				width: 30%;
+			}
+		</style>
+	</head>
+
+	<body class="bgw">
+		<input type="file" accept="image/*" style="display: none;" name="ajaxFile" id="header_file" />
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>修改商品</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+			<a id="setCommodity" class="submit">保存</a>
+		</div>
+		<div class="h88" style="margin-top: 1rem;"></div>
+		<ul class="commodity_information_ul" style="z-index: 2;">
+			<li>
+				<a class="value_name_tip">商品名称</a>
+				<input type="text" value="" placeholder="请输入商品名称" class="text_input" id="name" />
+			</li>
+			<!-- <li>
+				<a class="value_name_tip">商品价格</a>
+				<input type="number" value="" placeholder="请输入商品价格(整数)" class="text_input" id="price" />
+			</li> -->
+			<input type="hidden" value="0" id="price" />
+
+			<li>
+				<a class="value_name_tip">商品标签</a>
+				<input id="goods_tag" type="text" placeholder="请选择商品标签" class="text_input" readonly="readonly" />
+				<input type="hidden" name="goods_tag" />
+			</li>
+
+			<li>
+				<a class="value_name_tip">商品规格</a>
+				<div id="guige_div_1">
+					<div class="guige" guige-id="1">
+						<div class="weui-cells__title">规格</div>
+						<div class="weui-cells weui-cells_form">
+							<div class="weui-cell">
+								<div class="weui-cell__hd">
+									<label class="weui-label">规格名称</label>
+								</div>
+								<div class="weui-cell__bd">
+									<input class="weui-input" type="text" placeholder="请输入规格名" id="guige_name_1" data-recording="1">
+								</div>
+							</div>
+
+							<ul class="guige_select" id="guige_select">
+								<!--<li>大锅</li>
+									<li>小锅</li>
+									<li>特大锅</li>-->
+							</ul>
+
+							<div class="weui-cell">
+								<div class="weui-cell__hd">
+									<label class="weui-label">规格价格</label>
+								</div>
+								<div class="weui-cell__bd">
+									<input class="weui-input" type="number" placeholder="请输入规格价格" id="guige_price_1" data-recording="1">
+								</div>
+							</div>
+
+							<div class="weui-cell">
+								<div class="weui-cell__hd">
+									<label class="weui-label">库存数量</label>
+								</div>
+								<div class="weui-cell__bd">
+									<input class="weui-input" type="text" placeholder="请输入库存数量" id="guige_Inventory_1" data-recording="1">
+								</div>
+							</div>
+
+							<div class="weui-cell weui-cell_switch">
+								<div class="weui-cell__bd">库存无限制</div>
+								<div class="weui-cell__ft">
+									<input class="weui-switch kucun" type="checkbox" id="guige_Infinity_1" data-recording="1">
+								</div>
+							</div>
+
+							<div class="weui-cell weui-cell_switch">
+								<div class="weui-cell__bd">是否启用</div>
+								<div class="weui-cell__ft">
+									<input class="weui-switch" type="checkbox" checked="checked" id="guige_state_1" data-recording="1">
+								</div>
+							</div>
+
+							<div class="weui-cell weui-cell_switch" name="guige_wnk_state_div">
+								<div class="weui-cell__bd">万能卡权益</div>
+								<div class="weui-cell__ft">
+									<input class="weui-switch" type="checkbox" id="guige_wnk_state_1" data-recording="1">
+								</div>
+							</div>
+
+							<p class="tips_guige_wnk_state" name="guige_wnk_state_tip">启用万能卡权益后,万能卡用户购买该规格将享受<span id="discount_guige_wnk_state_1">9.9元</span>特权</p>
+
+							<div class="weui-cell weui-cell_access open-popup" id="donation_ratio_state_div_1">
+								<div class="weui-cell__hd cell_adjust">消费赠送比例</div>
+								<div class="weui-cell__bd" style="text-align: end;" id="num_donation_ratio_1">5%</div>
+								<div class="weui-cell__ft"></div>
+							</div>
+							<p class="tips_guige_wnk_state" id="donation_ratio_state_tip_1">用户购买该规格并使用后,额外赠送<span id="gift_donation_ratio_1">0</span>现金券</p>
+
+							<div class="weui-cell weui-cell__bd">
+								<button class="weui-btn weui-btn_plain-primary" onclick="" style="height: 2rem;line-height: 2rem;padding: 0;">删除</button>
+							</div>
+						</div><br>
+					</div>
+				</div>
+				<a href="javascript:void(0);" class="weui-btn weui-btn_primary" id="addGuige" style="margin-bottom: .2rem;">添加规格</a>
+			</li>
+
+			<li>
+				<a class="value_name_tip">商品分类</a>
+				<select id="type_select">
+					<!--<option value="1">1</option>-->
+				</select>
+			</li>
+
+			<li>
+				<a class="value_name_tip">商品描述</a>
+				<textarea class="text_textarea" placeholder="请输入商品描述" id="describe"></textarea>
+			</li>
+			<li>
+				<a class="value_name_tip commodity_line_tag">是否上架</a>
+				<a class="line_commodity_state" id="line_commodity_state">()</a>
+				<div class="mui-switch mui-active is_line_switch mui_switch_line" id="commodity_state_switch">
+					<div class="mui-switch-handle"></div>
+				</div>
+			</li>
+			<!--<li>
+				<a class="value_name_tip commodity_line_tag">允许万能卡消费</a>
+				<a class="line_commodity_state" id="is_make_wnk">()</a>
+				<div class="mui-switch mui-active is_line_switch mui_switch_wnk" id="is_make_wnk_switch">
+					<div class="mui-switch-handle"></div>
+				</div>
+			</li>-->
+			<li>
+				<a class="value_name_tip photo_choose_tag">商品图片</a>
+				<label class="choose_photo_button" id="choosePhoto">选择图片</label>
+				<!--<input type="button" value="选择图片" class="choose_photo_button" onclick="choosePhoto()"/>-->
+				<div style="clear: both;"></div>
+				<!-- <img src="#" class="commodity_photo" id="commodity_photo" /> -->
+			</li>
+		</ul>
+
+		<ul class="weui-uploader__files" id="lunbo_photo_ul" style="margin-top: 10px;margin-left: 10px;"></ul>
+
+		<!--底部pop消费赠送比例-->
+		<div id="half" class='weui-popup__container popup-bottom'>
+			<div class="weui-popup__overlay"></div>
+			<div class="weui-popup__modal">
+				<div class="toolbar">
+					<div class="toolbar-inner">
+						<a href="javascript:;" class="picker-button" id="confirm_pop" onclick="closeView()">确定</a>
+						<h1 class="title">消费赠送比例</h1>
+					</div>
+				</div>
+				<div class="modal-content">
+					<div class="weui-grids" id="pop_grids">
+						<a href="javascript:;" class="weui-grid js_grid" data-id="dialog">
+							<p class="weui-grid__label grid_item_ratio grid_item_ratio_selected">5%</p>
+						</a>
+						<a href="javascript:;" class="weui-grid js_grid" data-id="dialog">
+							<p class="weui-grid__label grid_item_ratio">10%</p>
+						</a>
+						<a href="javascript:;" class="weui-grid js_grid" data-id="dialog">
+							<p class="weui-grid__label grid_item_ratio">20%</p>
+						</a>
+						<a href="javascript:;" class="weui-grid js_grid" data-id="dialog">
+							<p class="weui-grid__label grid_item_ratio">30%</p>
+						</a>
+						<a href="javascript:;" class="weui-grid js_grid" data-id="dialog">
+							<p class="weui-grid__label grid_item_ratio">40%</p>
+						</a>
+						<a href="javascript:;" class="weui-grid js_grid" data-id="dialog">
+							<p class="weui-grid__label grid_item_ratio">50%</p>
+						</a>
+						<a href="javascript:;" class="weui-grid js_grid" data-id="dialog">
+							<p class="weui-grid__label grid_item_ratio">60%</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- UI插件 -->
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/ajaxfileupload.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common-mui.js"></script>
+		<script type="text/javascript" src="../../static/js/general_lib.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/goods/set_commodity.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/weui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,130 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>营业统计</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/css/statistics/statistics.css" />
+		<link rel="stylesheet" href="../../static/css/add_commodity.css" />
+		<link rel="stylesheet" href="../../static/css/statistics/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.min.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+
+	</head>
+
+	<body class="bgw">
+
+
+		<div class="head">
+			<h1>统计</h1>
+		</div>
+		<div class="h88"></div>
+
+		<div id="slider" class="mui-slider mui-fullscreen"></div>
+
+		<div class="mui-content" style="z-index: 2;">
+			<!-- Tab菜单 STR -->
+			<div class="pubtabmenu">
+				<div class="wrap">
+					<a class="item" id="order_statistics">订单统计</a>
+					<a class="item" id="seal_statistics">销售统计</a>
+				</div>
+			</div>
+			<!--<div class="statistics_time_div">
+			  	 <input type="text" value="" placeholder="选择日期" class="start_time fselect" id="selectDatetime"/>
+			  	 <a>~</a>
+			  	 <input type="text" value="" placeholder="选择日期" class="fselect" id="selectDatetimeend"/>
+			  </div>-->
+			<div class="order_statistics_div" id="order_statistics_div">
+				<div class="new_order_div">
+
+					<div class="order_top_div">
+						<img src="../../static/images/wnk_business/new_order_icon.png" />
+						<a>新订单</a>
+					</div>
+
+					<ul class="new_order_statistics_ul" id="new_order_statistics_ul"></ul>
+
+				</div>
+
+				<div class="new_order_div finish_order_div">
+
+					<div class="order_top_div finish_order_top_div">
+						<img src="../../static/images/wnk_business/finish_order_icon.png" />
+						<a>已完成订单</a>
+					</div>
+
+					<ul class="new_order_statistics_ul" id="finish_order_statistics_ul"></ul>
+				</div>
+			</div>
+
+			<div class="order_statistics_div seal_statistics_div" id="seal_statistics_div">
+				<div class="new_order_div">
+					<div class="order_top_div">
+						<img src="../../static/images/wnk_business/number_seal_icon.png" />
+						<a>按量统计</a>
+					</div>
+
+					<ul class="new_order_statistics_ul" id="order_count_statistics_ul"></ul>
+				</div>
+
+				<div class="new_order_div finish_order_div">
+					<div class="order_top_div finish_order_top_div">
+						<img src="../../static/images/wnk_business/amount_seal_icon.png" />
+						<a>按金额统计</a>
+					</div>
+					<ul class="new_order_statistics_ul" id="amount_count_statistics_ul"></ul>
+				</div>
+			</div>
+		</div>
+
+
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/js/statistics/statistics.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<!-- UI插件 -->
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/city-picker.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<!--
+	
+
+		<script type="text/javascript">
+			// 日期选择
+			$("#selectDatetime").datetimePicker({
+				times: function() {
+					return null;
+				},
+				onChange: function(picker, values, displayValues) {
+					console.log(values);
+				},
+			});
+			// 日期选择
+			$("#selectDatetimeend").datetimePicker({
+				times: function() {
+					return null;
+				},
+				onChange: function(picker, values, displayValues) {
+					console.log(values);
+				},
+			});
+		</script>
+-->
+	</body>
+
+</html>

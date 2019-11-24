@@ -1,0 +1,11 @@
+.goodstype:before{
+    background-image: url(../../images/wnk_business/icon/icon_integral_type.svg) !important;
+}
+
+.goods:before {
+    background-image: url(../../images/wnk_business/icon/icon_integral_goods.svg) !important;
+}
+
+.myorder:before{
+    background-image: url(../../images/wnk_business/icon/icon_integral_order.svg) !important;
+}

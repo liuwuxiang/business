@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>首页</title>
+		<!--<link rel="stylesheet" href="./static/lib/plus/css/jquery-weui.css" />-->
+		<link rel="stylesheet" href="./static/lib/plus/lib/weui.css" />
+		<link rel="stylesheet" href="./static/lib/mui/css/mui.css" />
+		<link rel="stylesheet" href="./static/font/iconfont.css" />
+
+		<style>
+			html {
+				/* 屏蔽控制台一些输出 */
+				touch-action: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 底部工具栏 -->
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" id="orders">
+				<span class="mui-icon iconfont icon-dingdan"></span>
+				<span class="mui-tab-label">订单</span>
+			</a>
+			<a class="mui-tab-item" id="commodities">
+				<span class="mui-icon iconfont icon-shangpin"></span>
+				<span class="mui-tab-label">商品</span>
+			</a>
+			<a class="mui-tab-item" id="statistics">
+				<span class="mui-icon iconfont icon-tongji"></span>
+				<span class="mui-tab-label">统计</span>
+			</a>
+			<a class="mui-tab-item" id="my">
+				<span class="mui-icon iconfont icon-wode">
+					<span class="mui-badge mui-badge-primary" style="display: none;" id="msg"></span>
+				</span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+
+		<script type="text/javascript" src="./static/lib/plus/lib/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="./static/lib/plus/js/jquery-weui.js"></script>
+		<script type="text/javascript" src="./static/lib/plus/js/weui.js"></script>
+		<script type="text/javascript" src="./static/lib/mui/js/mui.js"></script>
+		<script type="text/javascript" src="static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="static/js/common/toast.js"></script>
+		<script type="text/javascript" src="./static/js/main.js"></script>
+		<script type="text/javascript" src="./static/js/main.check.js"></script>
+		<script type="text/javascript" src="./static/js/navigator.js"></script>
+		<script type="text/javascript" src="./static/js/main.update.js"></script>
+		<script type="text/javascript" src="./static/js/index.js"></script>
+	</body>
+
+</html>

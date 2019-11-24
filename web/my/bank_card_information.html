@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>银行卡信息</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/plus/lib/weui.min.css">
+		<link rel="stylesheet" href="../../static/plus/css/jquery-weui.css">
+	</head>
+
+	<body>
+		<div class="head">
+			<h1>银行卡信息</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+
+		<!-- 通用表单 -->
+		<div class="pubform">
+			<form>
+				<div class="ftitle">提现银行卡信息</div>
+				<div class="fgroup">
+					<label class="fitem">
+		                <span class="fname">开户行</span>
+		                <input class="fselect" type="text" placeholder="请选择开户行" id="selectBank">
+		            </label>
+					<label class="fitem">
+		                <span class="fname">银行卡号</span>
+		                <input class="ftext" type="number" id="bank_card_number" placeholder="请填写银行卡号">
+		            </label>
+					<label class="fitem">
+		                <span class="fname">姓名</span>
+		                <input class="ftext" type="text" id="real_name" placeholder="请填写卡户姓名">
+		            </label>
+				</div>
+				<div class="fhandle">
+					<a class="fsubmit" id="fsubmit">设置</a>
+				</div>
+			</form>
+		</div>
+
+		<!-- UI插件 -->
+
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/js/my/bank_card_information.js"></script>
+		<script src="../../static/plus/js/jquery-weui.js"></script>
+		<script src="../../static/plus/js/city-picker.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script>
+			$(function() {
+				$('#bank_card_number').bind('input propertychange', function() {
+					bankCardNumberinputChange($(this).val());
+				});
+
+			})
+		</script>
+	</body>
+
+</html>

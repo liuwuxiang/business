@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>等级积分和推广积分</title>
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.css" />-->
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/font/iconfont.css" />
+		<link rel="stylesheet" href="../../static/css/my/integral.css" />
+	</head>
+
+	<body style="background: white;">
+
+		<!-- 头部STR -->
+		<div class="head">
+			<div style="padding: 10px 10px;text-align: center;">
+				<div class="mui-segmented-control">
+					<a class="mui-control-item mui-control-item-one mui-active" href="javascript:void(0);" id="spread_integral_menu">推广积分</a>
+					<a class="mui-control-item" href="javascript:void(0);" id="level_integral_menu">等级积分</a>
+				</div>
+			</div>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+			<a class="help_icon" id="help_icon" name="help_icon"></a>
+		</div>
+
+		<div class="h88"></div>
+		<div style="padding:0;height: auto;background: #0b8ffe;">
+
+			<div id="spread_integral" style="display: none;">
+				<div>
+					<span id="spread_integral_span">0</span>
+				</div>
+				<div class="jfhead">
+					<div class="hadle">
+				        <!--<a class="help">帮助说明</a>-->
+				        <div class="buts spread_integral_button_div" id="buts">
+				          <a id="spread_integral_input" class="b1">提现</a>
+				        </div>
+				    </div>
+			    </div>
+				
+			</div>
+
+			<div id="level_integral" style="display: none;">
+				<div>
+					<span id="level_integral_span" style="font-size: .88rem;color: #FFF;">0</span>
+				</div>
+				<input id="level_integral_input" type="button" value="赠送" />
+				<div style="line-height: .5rem;color: #FFF;margin-top: -2.2rem;font-size: .28rem;">
+					<span id="level_integral_count_income"> 总收入:0 </span><br>
+					<span id="send_integral_count_integral"> 赠送总数:-0 </span>
+					<span id="integral_xf_count_integral"> 客户消费总支出:-0 </span>
+				</div>
+			</div>
+
+		</div>
+
+		<!-- Tab菜单 STR -->
+		<div class="pubtabmenu">
+			<div class="wrap">
+				<a id="wrap_item_1" class="item">收入明细</a>
+				<a id="wrap_item_2" class="item">赠送支出</a>
+				<a id="wrap_item_3" class="item">客户消费支出</a>
+			</div>
+		</div>
+		<!-- Tab菜单 END -->
+
+		<!-- 明细STR -->
+		<div class="condetaile">
+			<ul class="list" id="content" style="font-size: .3rem;">
+
+				<!-- <li class="item">
+					<div class="left">
+						<span class="name">银币兑换</span>
+						<span class="time">2018-05-21 10:59:22</span>
+					</div>
+					<div class="right">
+						<span class="num down">-1800</span>
+					</div>
+				</li> -->
+
+
+			</ul>
+		</div>
+		<!-- 明细END -->
+
+		<!-- 积分为空 -->
+		<div class="publicnull" id="publicnull_tip">
+			<span class="icon jf"></span>
+			<p class="text" id="request_tip">暂无数据</p>
+		</div>
+
+		<script type="text/javascript" src="../../static/lib/plus/lib/jquery-2.1.4.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/weui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script type="text/javascript" src="../../static/js/my/integral.js"></script>
+		<script type="text/javascript" src="../../static/js/url_webview.js"></script>
+	</body>
+
+</html>

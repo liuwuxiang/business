@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>等级积分</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+	</head>
+	<body style="background: white;">
+		<div class="head">
+			<h1>我的玫瑰</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+			<a class="help_icon" id="help_icon" name="help_icon"></a>
+		</div>
+		<div class="h88"></div>
+		
+		<!-- 积分STR -->
+		  <div class="jfhead">
+		    <div class="desc">
+		      <span class="tit">玫瑰余额(朵)</span>
+		      <p class="num" id="rose_number_tag">0</p>
+		    </div>
+		    <div class="hadle">
+		      <a class="help"><!--当前等级--></a>
+		      <div class="buts">
+		        <a class="b1" name="rose_exchange">兑换</a>
+		        <!--<a name="integral_send">兑换</a>-->
+		      </div>
+		    </div>
+		  </div>
+		  <!-- 积分END -->
+		
+		<!-- Tab菜单 STR -->
+	    <div class="pubtabmenu" id="pubtabmenu">
+	      <div class="wrap">
+	        <a id="rose_income"      class="item" onclick="listOptionInit(0)">玫瑰收入</a>
+	        <a id="rose_expenditure" class="item" onclick="listOptionInit(1)">玫瑰支出</a>
+	      </div>
+	    </div>
+	  <!-- Tab菜单 END -->
+	  
+	  <!-- 明细STR -->
+	  <div class="condetaile">
+	    <ul class="list">
+	      <!--<li class="item">
+	        <div class="left">
+	          <span class="name">银币兑换</span>
+	          <span class="time">2018-05-21 10:59:22</span>
+	        </div>
+	        <div class="right">
+	          <span class="num down">-1800</span>
+	        </div>
+	      </li>-->
+	    </ul>
+	  </div>
+	  <!-- 明细END -->
+		
+		<!-- 积分为空 -->
+	  <div class="publicnull" id="publicnull_tip">
+	    <span class="icon jf"></span>
+	    <p class="text" id="request_tip">暂无数据</p>
+	  </div>
+		
+		<!-- UI插件 -->
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js" ></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/my_rose/my_rose.js" ></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script type="text/javascript" src="../../static/js/url_webview.js"></script>
+	</body>
+</html>

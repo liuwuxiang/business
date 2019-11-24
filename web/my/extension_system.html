@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>推广系统</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/css/my/extension_system.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+		
+		<style>
+			#share{
+				position: absolute;
+				bottom: 2.5rem;
+				left: 0;
+				width: 100%;
+				overflow:hidden;
+			}
+			#share  li {
+				float: left;
+				list-style:none;
+				text-align:center;
+				padding-left: .88rem;
+				width:35%;
+			}
+			#share > li > img  {
+				width: 1rem;
+				height: 1rem;
+				margin-top: 0;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div class="head">
+			<h1>推广系统</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+		
+		<!-- Tab菜单 STR -->
+	    <div class="pubtabmenu" id="pubtabmenu">
+	      <div class="wrap">
+	      	<a id="extension_materiel" class="item" onclick="listOptionInit(0)">推广物料</a>
+	      	<a id="my_materiel"        class="item" onclick="listOptionInit(1)">我的物料</a>
+	        <a id="qr_code"            class="item" onclick="listOptionInit(2)">二维码</a>
+	      </div>
+	    </div>
+	  <!-- Tab菜单 END -->
+		
+		<!--推广物料div-->
+		<div class="extension_materiel_div" id="extension_materiel_div">
+		     <ul class="business_type_ul" id="business_type_ul">
+		          <!--<li class="business_type_ul_li">
+		              <div class="business_type_li_div">
+		                  <img src="../../static/images/wnk_business/integral_card_background.png" class="li_background_img"/>
+		                  <div class="li_top_div">
+		                      <img src="../../static/images/wnk_business/logo.jpg"/>
+		                      <a>电影院</a>
+	                      </div>
+	                      <a class="surplus_tip">购买</a>
+	                  </div>
+    	              </li>-->
+		     </ul>
+		</div>
+		
+		<!--我的物料div-->
+		<div class="my_materiel_div" id="my_materiel_div">
+			<div class="addhouse" style="height: 42px;padding: 0;margin: 0;margin-top: 3px;">
+			    <a class="addlink"><span>赠送</span></a>
+			</div>
+			<ul class="business_type_ul" id="my_materiel_ul" style="margin-top: 3px;">
+		          <!--<li class="business_type_ul_li">
+		              <div class="business_type_li_div">
+		                  <img src="../../static/images/wnk_business/integral_card_background.png" class="li_background_img"/>
+		                  <div class="li_top_div">
+		                      <img src="../../static/images/wnk_business/logo.jpg"/>
+		                      <a>电影院</a>
+	                      </div>
+	                      <a class="surplus_tip2">购买</a>
+	                  </div>
+    	              </li>-->
+		     </ul>
+		     
+		     <!-- 积分为空 -->
+			  <div class="publicnull" id="publicnull_tip" style="background: white;">
+			    <span class="icon jf"></span>
+			    <p class="text" id="request_tip">暂无数据</p>
+			  </div>
+		</div>
+		
+		<!--二维码相关-->
+		<div class="qr_code_div" id="qr_code_div">
+			<!-- Tab菜单 STR -->
+		    <div class="pubtabmenu" id="pubtabmenu" style="margin-top: 1px;">
+		      <div class="wrap">
+		        <a id="recommend_qr_code" class="item" onclick="listOptionInitQrCode(0)">推广二维码</a>
+		        <a id="pay_qr_code"       class="item" onclick="listOptionInitQrCode(1)">收款二维码</a>
+		      </div>
+		    </div>
+			
+			<!--<a id="qr_code_name">推广二维码</a>-->
+			<img src="../../static/images/wnk_business/6000000640790463.png" id="qr_code_img"/>
+			<!--分享按钮-->
+			<ul id="share">
+				<!--微博-->
+				<li id="fenxiang">
+					<img src="../../static/images/wnk_business/share_fenxiang.png" alt="分享到微博" />
+				</li>
+				<!--朋友圈-->
+			</ul>
+			<!--<a id="qr_code_tip">扫一扫加入我们</a>-->
+		</div>
+		
+		<!-- UI插件 -->
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js" ></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/my/extension_system.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+	</body>
+</html>

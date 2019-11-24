@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>健身卡扫码出入记录</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.css" />-->
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css" />
+		<link rel="stylesheet" href="../../static/css/order/gym_card_inout_record.css" />
+
+	</head>
+
+	<body>
+		<!--健身卡扫码出入记录弹窗-->
+		<div id="pop_container"></div>
+		<div class="mui-popover pop_window" id="gym_card_pop">
+			<div class="mui-popover-arrow"></div>
+			<!--定义弹窗内容-->
+			<div class="pop_gym_card_border">
+				<div class="pop_head">
+					<div class="pop_status">
+						<img src="../../static/images/wnk_business/gymCardGreenSlash.png" />
+						<span id="pop_fitnessing">健身中</span>
+					</div>
+					<p id="pop_title">人员进入</p>
+					<img class="pop_close" id="pop_close" src="../../static/images/wnk_business/gymInOutRecordPopClose.png" />
+				</div>
+				<div class="pop_body">
+					<div class="member_name">
+						<img id="pop_member_head" src="../../static/images/wnk_business/memberHeadDefault.png" />
+						<p id="pop_member_name">姓名</p>
+						<!-- <img id="pop_member_sex" src="../../static/images/wnk_business/memberSexWoman.png" /> -->
+					</div>
+					<div class="pop_member_dueto">
+						到期时间：<span id="pop_member_dueto">2019-08-08</span>
+					</div>
+					<!--人员离开显示进入时间-->
+					<div class="pop_leave_time">
+						<div class="divider"></div>
+						<div class="pop_title_enter_time">
+							<img src="../../static/images/wnk_business/memberEnter.png" />
+							<p>进入时间</p>
+						</div>
+						<span id="pop_enter_time">2018-12-26 12:30</span>
+					</div>
+				</div>
+				<div id="pop_confirm">
+					<!--根据进出状态切换图标-->
+					<img id="pop_icon_confirm" src="../../static/images/wnk_business/memberEnter.png" />
+					<p id="pop_txt_confirm">确认</p>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.js"></script>
+		<script type="text/javascript" src="../../static/plus/swiper/js/swiper.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/js/order/gym_card_in_out_record.js"></script>
+	</body>
+
+</html>

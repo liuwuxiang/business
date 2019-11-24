@@ -1,0 +1,161 @@
+body{
+	background: white !important;
+}
+
+.top_div{
+	width: 100%;
+	height: auto;
+	background: #1E91FB;
+	overflow: hidden;
+}
+
+.balance_div{
+	width: 96%;
+	height: auto;
+	margin-left: 2%;
+	background: white;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border-radius: 3px;
+	overflow: hidden;
+}
+
+.balance_tip{
+	display: block;
+	width: 94%;
+	height: 20px;
+	line-height: 20px;
+	margin-left: 3%;
+	text-align: left;
+	margin-top: 5px;
+	font-size: 13px;
+	color: #808080;
+}
+
+
+.account_balance_value{
+	display: block;
+	width: auto;
+	height: auto;
+	line-height: 30px;
+	margin-left: 3%;
+	text-align: left;
+	margin-top: 10px;
+	font-size: 34px;
+	color: #FE9904;
+	font-weight: bold;
+	float: left;
+}
+
+.money_danwei{
+	display: block;
+	width: auto;
+	height: auto;
+	line-height: 14px;
+	margin-left: 3%;
+	text-align: left;
+	margin-top: 26px;
+	font-size: 14px;
+	color: #FE9904;
+	font-weight: bold;
+	float: left;
+}
+
+.withdraw_button{
+	display: block;
+	width: 47%;
+	height: 40px;
+	border: 0;
+	-webkit-appearance: none;
+	border-radius: 3px;
+	margin-left: 2%;
+	color: white;
+	font-size: 15px;
+	background: #FE6D48;
+	line-height: 0;
+	margin-top: 5px;
+	margin-bottom: 8px;
+	float: left;
+}
+
+.money_detail_ul{
+	width: 98%;
+	height: auto;
+	overflow: hidden !important;
+	padding: 0 !important;
+	margin-left: 2% !important;
+	margin-top: 5px;
+}
+
+.money_detail_ul li{
+	width: 100% !important;
+	height: auto !important;
+	list-style: none !important;
+	text-align: center !important;
+	cursor: pointer !important;
+	overflow: hidden !important;
+	background: white !important;
+	border-bottom: solid #D3D3D3 1px;
+}
+
+.li_top_div{
+	width: 98%;
+	height: 20px;
+	margin-top: 5px;
+	/*background: red;*/
+}
+
+.li_bottom_div{
+	width: 98%;
+	height: 15px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.detail_name{
+	display: block;
+	width: 48%;
+	height: 20px;
+	line-height: 20px;
+	text-align: left;
+	font-size: 14px;
+	color: #000000;
+	float: left;
+}
+
+.income_money{
+	display: block;
+	width: 50%;
+	height: 20px;
+	line-height: 20px;
+	text-align: right;
+	float: left;
+	font-size: 18px;
+	color: #94C45A;
+}
+
+.detail_time{
+	display: block;
+	width: 48%;
+	height: 15px;
+	line-height: 15px;
+	text-align: left;
+	float: left;
+	font-size: 13px;
+	color: #A9A9A9;
+}
+
+.detail_balance{
+	display: block;
+	width: 50%;
+	height: 15px;
+	line-height: 15px;
+	text-align: right;
+	float: left;
+	font-size: 13px;
+	color: #A9A9A9;
+}
+
+.expenditure_amount{
+	color: #FA7955;
+}

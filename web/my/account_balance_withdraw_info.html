@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>提现订单详情</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.css" />-->
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css" />
+		<link rel="stylesheet" href="../../static/css/order/my_order_detail.css" />
+
+	</head>
+
+	<body>
+		<div class="head">
+			<h1>提现订单详情</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+		<!--		
+		<div class="top_div">
+			<div class="top_business_div" onclick="joinWnkBusinessHome()">
+				<a id="business_name">万达国际影城(奥体店)</a>
+			</div>
+			<div class="li_commodites_div" id="li_commodites_div">
+				<a class="commodities_number_tag" id="commodity_number_tag">商品(10)</a>
+				<ul class="commodities_ul" id="commodities_ul">
+					<li>
+						<a class="commodity_name_tag">美式奥尔良鸡腿原味咖喱饭</a>
+						<a class="commodity_number_tag">x1</a>
+						<a class="price_tag">35.00</a>
+					</li>
+					<li>
+						<a class="commodity_name_tag">美式奥尔良鸡腿原味咖喱饭</a>
+						<a class="commodity_number_tag">x1</a>
+						<a class="price_tag">35.00</a>
+					</li>
+				</ul>
+			</div>
+		</div>-->
+
+
+
+		<div class="weui-form-preview">
+			<div class="weui-form-preview__bd">
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">系统订单号:</label>
+					<span class="weui-form-preview__value" id="order_no"></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">第三方订单号:</label>
+					<span class="weui-form-preview__value" id="out_trade_no"></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">银行名称:</label>
+					<span class="weui-form-preview__value" id="back_name"></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">提现卡号:</label>
+					<span class="weui-form-preview__value" id="bank_card_number"></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">提现姓名:</label>
+					<span class="weui-form-preview__value" id="bank_card_name"></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">提现金额:</label>
+					<span class="weui-form-preview__value" id="rmb_count_amount"></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">提现手续费:</label>
+					<span class="weui-form-preview__value" id="service_charge_amount"></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">实际到账金额:</label>
+					<span class="weui-form-preview__value" id="real_payment_rmb_amount"></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">提现状态:</label>
+					<span class="weui-form-preview__value" id="state"></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">申请时间:</label>
+					<span class="weui-form-preview__value" id="apply_date"></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">放款时间:</label>
+					<span class="weui-form-preview__value" id="loan_date"></span>
+				</div>
+				<div class="weui-form-preview__item">
+					<label class="weui-form-preview__label">备注信息:</label>
+					<span class="weui-form-preview__value" id="remark"></span>
+				</div>
+			</div>
+		</div>
+		
+
+
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script type="text/javascript" src="../../static/js/my/account_balance_withdraw_info.js"></script>
+	</body>
+
+</html>

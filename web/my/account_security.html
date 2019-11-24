@@ -1,0 +1,100 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>账户安全</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.min.css" />
+	</head>
+
+	<body class="bgw">
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>账户安全</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<!-- 设置 -->
+		<div class="pubmenulist">
+
+			<a href="javascript:void(0);" name="set_login_pwd" class="menuitem">
+				<span class="name">登录密码</span>
+			</a>
+
+			<a href="javascript:void(0);" name="set_pay_pwd" class="menuitem">
+				<span class="name">资金密码</span>
+			</a>
+
+			<a href="javascript:void(0);" name="bank_card_information" class="menuitem">
+				<span class="name">银行卡信息</span>
+			</a>
+
+
+		</div>
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/js/general_lib.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script charset="UTF-8">
+			mui.init();
+			mui.plusReady(function() {
+				mui.ready(function() {
+					mui('.pubmenulist').on('tap', '.menuitem', function() {
+						var name = this.getAttribute('name');
+						var urls, id;
+						switch(name) {
+							case 'set_login_pwd':
+								urls = "./set_login_pwd.html";
+								id = "set_login_pwd.html";
+								break;
+							case 'set_pay_pwd':
+								urls = "./set_pay_pwd.html";
+								id = "set_pay_pwd.html";
+								break;
+							case 'bank_card_information':
+								urls = "./bank_card_information.html";
+								id = "bank_card_information.html";
+								break;
+							default:
+								mui.toast('开发中...')
+								break;
+						}
+						mui.openWindow({
+							url: urls,
+							id: id,
+							styles: {
+								top: '0px',
+								bottom: '51px',
+							},
+							extras: {},
+							createNew: true, //是否重复创建同样id的webview，默认为false:不重复创建，直接显示
+							show: {
+								autoShow: true, //页面loaded事件发生后自动显示，默认为true
+								aniShow: 'none', //页面显示动画，默认为”slide-in-right“；
+								duration: '200' //页面动画持续时间，Android平台默认100毫秒，iOS平台默认200毫秒；
+							},
+							waiting: {
+								autoShow: true, //自动显示等待框，默认为true
+								title: '正在加载...', //等待对话框上显示的提示内容
+							}
+						});
+					});
+				});
+			});
+		</script>
+	</body>
+
+</html>

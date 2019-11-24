@@ -1,0 +1,113 @@
+.tip_div {
+	height: 2rem;
+	font-size: .35rem;
+	line-height: .6rem;
+	background-color: #F2F2F2;
+	color: #6C6C6C;
+	padding-left: .44rem;
+}
+
+.tip_div img {
+	width: .5rem !important;
+	height: .5rem !important;
+	top: .13rem;
+}
+
+th,
+td {
+	border: 1px #A9A9A9 solid;
+	height: 1.0rem;
+	text-align: center;
+}
+
+td img {
+	width: .5rem;
+	height: .5rem;
+}
+
+thead {
+	background-color: #D7D7D7;
+	color: #747474;
+}
+
+thead  th {
+	padding-left: .3rem;
+	padding-right: .3rem;
+}
+
+
+.td-one {
+	background-color: #D7D7D7;
+}
+
+.td-one>p {
+	background-color: #D7D7D7;
+	color: #747474;
+}
+
+.td-number {
+	color: #0C90FF;
+}
+
+.td-days>p {
+	color: #FF9408;
+}
+
+#date_select {
+	padding-left: .2rem;
+	padding-right: .4rem;
+}
+
+#date_select div {
+	display: block;
+	width: .3rem;
+	height: .3rem;
+	top: -.5rem;
+	left: 1rem;
+	z-index: 999;
+}
+
+#input-div {
+	width: 100%;
+	background-color: #FFFFFF;
+	padding-top: 5px;
+	padding-left: 10%;
+	position: fixed;
+	top: 4.6rem;
+	z-index: 9999;
+}
+
+#input-div input {
+	background-color: #F2F2F2;
+	width: 90%;
+	margin-top: .1rem;
+}
+
+#input-div span {
+	margin-bottom: 10px;
+}
+
+#input-div li {
+	float: left;
+	width: 28%;
+	height: .8rem;
+	text-align: center;
+	line-height: .8rem;
+	font-size: .3rem;
+	border: 1px #C0C0C0 solid;
+	border-radius: 5px;
+	margin-right: 3%;
+}
+
+#input-div a {
+	display: block;
+	width: 90%;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: center;
+	background-color: #169BD5;
+	color: #FFFFFF;
+	margin-top: 1.1rem;
+	border-radius: 10px;
+	margin-bottom: .2rem;
+}

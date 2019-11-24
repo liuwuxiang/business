@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>订单使用</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.css" />-->
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css" />
+		<link rel="stylesheet" href="../../static/css/order/my_order_detail.css" />
+		<link rel="stylesheet" href="../../static/css/order/order_refund.css" />
+	</head>
+
+
+	<body>
+		<div class="head">
+			<h1>订单使用</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+
+		<div class="top_div" style="margin-bottom: 10px;">
+			
+			<div class="li_commodites_div" id="li_commodites_div" style="margin-bottom: 0;">
+				<a class="commodities_number_tag" id="commodity_number_tag">商品(0)</a>
+				<ul class="commodities_ul" id="commodities_ul">
+					<!--<li>
+						<a class="commodity_name_tag">美式奥尔良鸡腿原味咖喱饭</a>
+						<a class="commodity_number_tag">x1</a>
+						<a class="price_tag">35.00</a>
+					</li>-->
+				</ul>
+				<div class="weui-form-preview__bd">
+					<div class="weui-form-preview__item">
+						<label class="weui-form-preview__label">剩余可用</label>
+						<span class="weui-form-preview__value" id="surplus_available">0件</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="weui-cells" style="margin-left: 2%;margin-right: 2%;margin-bottom: 10px;">
+			<div class="weui-cell">
+				<div class="weui-cell__hd">
+					<label for="" class="weui-label">使用数量</label>
+				</div>
+				<div class="weui-cell__bd refund_number_div">
+					<ul>
+						<li><a href="javascript:void(0);" id="refund_number_add">+</a>
+						</li>
+						<li>
+							<input type="number"  id="refund_number" value="0"  disabled="disabled"/>
+						</li>
+						<li><a href="javascript:void(0);" id="refund_number_less">-</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			
+		<a id="order_make" class="weui-btn weui-btn_primary" style="margin: 0 .2rem .2rem .2rem;">立即使用</a>
+
+
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script type="text/javascript" src="../../static/js/order/order_make.js"></script>
+	</body>
+
+</html>

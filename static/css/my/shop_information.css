@@ -1,0 +1,102 @@
+body {
+	background: #EEEEEE !important;
+}
+
+.lunbo_photo_ul {
+	width: 96%;
+	height: auto;
+	overflow: hidden !important;
+	padding: 0 !important;
+	margin-left: 2%;
+}
+
+.lunbo_photo_ul li {
+	width: 100% !important;
+	height: auto !important;
+	list-style: none !important;
+	text-align: center !important;
+	cursor: pointer !important;
+	overflow: hidden !important;
+	margin-top: 5px !important;
+}
+
+.photo_img {
+	width: 100%;
+	height: auto;
+}
+
+.delete_button {
+	display: block;
+	width: 30px;
+	height: auto;
+	position: absolute;
+	z-index: 9999;
+	top: 5px;
+	right: 5px;
+}
+
+.weui-search-bar>a {
+	padding-left: 10px;
+}
+
+.myBadgeposition {
+	position: relative !important;
+	top: -3.7rem;
+	left: -0.70rem;
+}
+
+#lunbo_photo_ul img {
+	height: 4rem;
+	width: 4rem;
+}
+
+#lunbo_photo_ul>li {
+	width: 30%;
+}
+
+.head {
+	position: fixed !important;
+	z-index: 9 !important;
+	left: 0 !important;
+	top: 0 !important;
+	width: 100% !important;
+	height: 1.88rem !important;
+	line-height: 1.88rem !important;
+	text-align: center !important;
+	background: #0b8ffe !important;
+}
+
+.head h1 {
+	font-size: .8rem !important;
+	line-height: 1.88rem !important;
+}
+
+.head .submit {
+	font-size: .8rem !important;
+	line-height: 1.88rem !important;
+}
+
+.head .back {
+	width: 1.88rem !important;
+	height: 1.88rem !important;
+}
+
+
+.arrow_img{
+	display: block;
+	width: 20px !important;
+	height: 20px !important;
+	position: absolute;
+	top: 40px;
+	right: 0;
+}
+
+#teseContent{
+	color: #D3D3D3 !important;
+	font-size: 14px !important;
+}
+
+#fuwuContent{
+	color: #D3D3D3 !important;
+	font-size: 14px !important;
+}

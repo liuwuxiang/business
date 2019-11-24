@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>我的</title>
+		<link rel="stylesheet" href="../../static/css/my/my.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/css/goods/commodities.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.picker.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.poppicker.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+		
+		<style>
+			.img-jiaobiao{
+				top: -0.1rem !important;
+				left:50% !important;
+				background: none;
+			}
+		</style>
+		
+	</head>
+
+	<body class="bgw">
+		<!-- 头部STR -->
+		<div class="head" style="background: white;">
+			<h1 style="color: black;">添加活动</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+		<!-- 头部END -->
+
+		<!--轮播图 - 广告长图-->
+		<div id="ad_gallery_div" class="weui-cells weui-cells_form" style="margin-top: 0px;display: none;">
+			<div id="ad_gallery">
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">活动标题</label></div>
+					<div class="weui-cell__bd">
+						<input id="title1" class="weui-input" type="text" placeholder="请输入活动标题">
+					</div>
+				</div>
+				
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">接收对象</label></div>
+					<div class="weui-cell__bd">
+						<input id="select1" class="weui-input" type="text" readonly="readonly" placeholder="请选择接受对象">
+					</div>
+				</div>
+
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">活动轮播图</label></div>
+					<div class="weui-cell__bd">
+						<div class="weui-uploader">
+							<div class="weui-uploader__bd">
+								<ul class="weui-uploader__files" id="uploaderFiles1"></ul>
+								<!--<div class="weui-uploader__input-box" id="header_file1_div">
+									<input name="ajaxFile" id="header_file1" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+								</div>-->
+								<a id="header_file1" class="weui-uploader__input-box"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">活动长图</label></div>
+					<div class="weui-cell__bd">
+						<div class="weui-uploader">
+							<div class="weui-uploader__bd">
+								<ul class="weui-uploader__files" id="uploaderFiles2"></ul>
+								<!--<div class="weui-uploader__input-box" id="header_file2_div">
+									<input name="ajaxFile" id="header_file2" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+								</div>-->
+								<a id="header_file2" class="weui-uploader__input-box"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="memmenu" style="margin-top: 0;border-width: 1px;">
+					<a href="javascript:void(0);" class="weui-btn weui-btn_primary" id="addGalleryChangtu">新增活动</a>
+				</div>
+			</div>
+		</div>
+
+		<!--轮播图 - 连接进入主页-->
+		<div id="ad_gallery_div2" class="weui-cells weui-cells_form" style="margin-top: 0px;display: none;">
+			<div id="ad_gallery2">
+
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">活动标题</label></div>
+					<div class="weui-cell__bd">
+						<input id="title2" class="weui-input" type="text" placeholder="请输入活动标题">
+					</div>
+				</div>
+				
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">接收对象</label></div>
+					<div class="weui-cell__bd">
+						<input id="select2" class="weui-input" type="text" readonly="readonly" placeholder="请选择接受对象">
+					</div>
+				</div>
+
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">活动轮播图</label></div>
+					<div class="weui-cell__bd">
+						<div class="weui-uploader">
+							<div class="weui-uploader__bd">
+								<ul class="weui-uploader__files" id="uploaderFiles3"></ul>
+								<!--<div class="weui-uploader__input-box" id="header_file3_div">
+									<input name="ajaxFile" id="header_file3" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+								</div>-->
+								<a id="header_file3" class="weui-uploader__input-box"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="memmenu" style="margin-top: 0;border-width: 1px;">
+				<a href="javascript:void(0);" class="weui-btn weui-btn_primary" id="addGalleryLianjie">新增活动</a>
+			</div>
+		</div>
+
+		<!--系统消息-->
+		<div id="ad_systeme_msg_div" class="weui-cells weui-cells_form" style="margin-top: 0px;display: inline;">
+			<div id="ad_system_msg">
+				
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">活动标题</label></div>
+					<div class="weui-cell__bd">
+						<input id="title3" class="weui-input" type="text" placeholder="请输入活动标题">
+					</div>
+				</div>
+				
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">接收对象</label></div>
+					<div class="weui-cell__bd">
+						<input id="select3" class="weui-input" type="text" readonly="readonly" placeholder="请选择接受对象">
+					</div>
+				</div>
+				
+				<div class="weui-cell weui-cell_switch">
+					<div class="weui-cell__bd">活动内容</div>
+				</div>
+			
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<textarea id="detail" class="weui-textarea" placeholder="请输入活动内容" rows="3"></textarea>
+						<div class="weui-textarea-counter"><span>0</span>/200</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="memmenu" style="margin-top: 0;border-width: 1px;">
+				<a href="javascript:void(0);" class="weui-btn weui-btn_primary" id="addSystemMsg">新增活动</a>
+			</div>
+		</div>
+
+	</body>
+	<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript" src="../../static/lib/mui/js/mui.picker.js" ></script>
+	<script type="text/javascript" src="../../static/lib/mui/js/mui.poppicker.js" ></script>
+	<script type="text/javascript" src="../../static/js/main.js"></script>
+	<script type="text/javascript" src="../../static/js/main.check.js"></script>
+	<script type="text/javascript" src="../../static/js/common/common.js"></script>
+	<script type="text/javascript" src="../../static/js/common/common-mui.js"></script>
+	<script type="text/javascript" src="../../static/js/common/ajaxfileupload.js" ></script>
+	<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+	<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+	<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+	<script type="text/javascript" src="../../static/js/navigator.js"></script>
+	<script type="text/javascript" src="../../static/js/my/doings_spread_edit.js"></script>
+
+</html>

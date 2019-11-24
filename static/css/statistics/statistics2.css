@@ -1,0 +1,83 @@
+.mui-card {
+	margin: 0 !important;
+}
+
+/* 头部商家名 */
+.header {
+	text-align: center;
+	margin-top: .4rem;
+}
+
+/* 今日总收入 */
+.total-revenue {
+	margin-top: .4rem;
+	text-align: center;
+	color: #080808;
+}
+
+.analysis_record {
+	list-style: none;
+	float: left;
+	width: 50%;
+	height: 2rem;
+	text-align: center;
+	line-height: .6rem;
+	padding-top: .45rem;
+	color: #000000;
+}
+
+/* 销售分析和收款记录 */
+.analysis {
+	/*margin-top: .7rem;*/
+	height: 2rem;
+}
+
+ul>li {
+	list-style: none;
+	float: left;
+	width: 33%;
+	height: 2rem;
+	text-align: center;
+	line-height: .5rem;
+}
+
+li > img {
+	height: .8rem;
+	width: .8rem;
+	margin-top: .4rem;
+}
+
+.analysis ul{
+}
+
+.option_li{
+	border-right: solid 1px #DCDCDC;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.top_div{
+	background: #0b8ffe;
+	color: white;
+}
+
+#store_name{
+	color: white;
+	font-size: 20px;
+}
+
+.jinri_icome_tag{
+	color: white;
+}
+
+#today_revenue{
+	color: white;
+}
+
+.analysis_record p{
+	color: white;
+}
+
+ .analysis_record span{
+ 	color: white;
+ }

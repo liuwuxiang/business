@@ -1,0 +1,136 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>商品管理</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<!--标准mui.css-->
+
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.min.css" />
+		<link rel="stylesheet" href="../../static/css/goods/commodities.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+
+		<style>
+			li>img {
+				height: 2.2rem !important;
+				width: 1.9rem !important;
+			}
+			.tag{
+				width: 100%;
+				overflow:hidden;
+				word-break:keep-all;
+				white-space:nowrap;
+				text-overflow:ellipsis;
+			}
+			.type_li>a {
+				display: block;
+				width: 2rem;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+			}
+			
+			.content_div {
+				margin-top: 0;
+			}
+			
+			.commodities_type_ul {
+				margin-top: 0;
+			}
+			
+			.gundong {
+				display: block;
+				z-index: 999;
+				padding: 2px;
+				overflow-x: hidden;
+				overflow-y: scroll;
+			}
+		</style>
+
+	</head>
+
+	<body class="bgw">
+
+		<div id="slider" class="mui-slider mui-fullscreen"></div>
+
+		<!--右上角弹出菜单-->
+		<!--<div id="topPopover_div" class="mui-popover mui-popover_div" style="z-index: 999;">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view mui-table-view_ul">
+						<li class="mui-table-view-cell">
+							<a href="javascript:void(0);" id="AddCommodity">添加商品</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="javascript:void(0);" id="CommodityTypeManager">分类管理</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="javascript:void(0);" id="business_goods_tag">商品标签管理</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="javascript:void(0);" id="AddCommodity2">添加商品2</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>-->
+
+		<div class="mui-content" style="z-index: 2;">
+			<!-- 头部STR -->
+			<div class="head">
+				<h1>商品管理</h1>
+				<!--<a href="#topPopover_div" id="popUpMenu2" class="add"></a>-->
+				<a id="commodity_type_manager" class="commodity_type_manager">分类管理</a>
+				<a id="popUpMenu2" class="add"></a>
+				<!-- sel表示有消息  -->
+			</div>
+			<div class="h88"></div>
+
+			<ul class="commodities_type_ul gundong" id="commodities_type_ul">
+				
+			</ul>
+			
+			<div class="content_div  gundong" id="content_div">
+				<ul class="commodity_ul" id="content1">
+					<!--<li name="' + obj.id + '" >
+						<img src="' + obj.photo + '">
+						<div class="commodity_information_div">
+							<a class="commodity_name_tag">obj.name</a>
+							<a class="commodity_describe">obj.commodity_describe</a>
+							<a class="month_sale_tag">bj.state_str</a>
+							<a class="commodity_price_tag">￥0.00</a>
+							<a class="month_sale_tag tag">标签1,标签2,标签3,标签4</a>
+						</div>
+						<input type="button" value="删除" class="delete_commodity">
+						<input type="button" value="修改" class="set_commodity">
+					</li>-->
+				</ul>
+			</div>
+			
+		</div>
+
+
+	</body>
+	<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript" src="../../static/js/common/common.js"></script>
+	<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+	<script type="text/javascript" src="../../static/js/main.js"></script>
+	<script type="text/javascript" src="../../static/js/main.check.js"></script>
+	<script type="text/javascript" src="../../static/js/goods/commodities.js"></script>
+	<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+	<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+	<script type="text/javascript" src="../../static/js/navigator.js"></script>
+
+</html>

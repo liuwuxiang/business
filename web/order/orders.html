@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>订单中心</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.css" />-->
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/font/iconfont.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/css/order/orders.css" />
+
+		<style>
+			/* 广告轮播图图片设置 */
+			
+			.mui-slider img {
+				width: 100%;
+				height: 2rem;
+			}
+		</style>
+	</head>
+
+	<body class="bgw">
+
+		<div class="head">
+			<h1>订单中心</h1>
+			<a class="scan"></a>
+		</div>
+		<div class="h88"></div>
+
+		<!-- 下拉刷新组件 -->
+		<div id="slider" class="mui-slider mui-fullscreen"></div>
+
+		<!-- 轮播广告 -->
+		<div class="mui-slider">
+			<div class="mui-slider-group mui-slider-loop" id="slider_list">
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#"><img src="#" /></a>
+				</div>
+				<div class="mui-slider-item mui-slider-item-duplicate">
+					<a href="#"><img src="#" /></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="pubtabmenu" style="z-index: 2;">
+			<div class="wrap">
+				<a class="item" id="new_order" name="0">新订单</a>
+				<a class="item" id="finish_order" name="1">已完成</a>
+				<!--<a class="item" id="quanyi_order" name="2">权益订单</a>-->
+			</div>
+		</div>
+		<a class="top_people_static_tag" id="top_people_static_tag">消费人数：0人</a>
+		<a class="top_number_static_tag" id="top_number_static_tag">消费次数：0次</a>
+
+		<ul class="order_in_progress_ul" id="order_in_progress_ul"></ul>
+
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.js"></script>
+		<script type="text/javascript" src="../../static/plus/swiper/js/swiper.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script type="text/javascript" src="../../static/js/order/order.js"></script>
+	</body>
+
+</html>

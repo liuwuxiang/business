@@ -1,0 +1,68 @@
+.top_div{
+	width: 96%;
+	height: auto;
+	/*background: #F5F5F5;*/
+	margin-left: 2%;
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+.li_commodites_div{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.commodities_number_tag{
+	display: block;
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 2%;
+	text-align: left;
+	font-size: 16px;
+	color: #808080;
+}
+
+.commodities_ul{
+	width: 100%;
+	height: auto;
+	overflow: hidden !important;
+	padding: 0 !important;
+}
+
+.commodities_ul li{
+	width: 100% !important;
+	height: auto !important;
+	list-style: none !important;
+	text-align: center !important;
+	cursor: pointer !important;
+	overflow: hidden !important;
+	background: white !important;
+	/*border-bottom: solid #EEEEEE 1px;*/
+	padding-left: 2%;
+	padding-right: 2%;
+	margin-bottom: 10px;
+}
+
+.commodities_ul li a{
+	display: block;
+	width: 30%;
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	color: #A9A9A9;
+	font-size: 13px;
+	float: left;
+}
+
+.commodities_ul li span{
+	display: block;
+	width: 70%;
+	height: auto;
+	line-height: 25px;
+	text-align: left;
+	color: #A9A9A9;
+	font-size: 13px;
+	float: left;
+}

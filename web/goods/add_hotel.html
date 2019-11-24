@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>添加商品</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.min.css" />
+		<link rel="stylesheet" href="../../static/css/goods/add_hotel.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/css/my/shop_information.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/lib/plus/css/jquery-weui.css" />
+		<link rel="stylesheet" type="text/css" href="../../static/plus/lib/weui.css" />
+		<style>
+			textarea,
+			input {
+				font-size: .8rem !important;
+			}
+			
+			.guige_name {
+				width: 20% !important;
+			}
+			
+			.guige_price {
+				width: 20% !important;
+				position: absolute;
+				left: 25%;
+				top: 0rem;
+			}
+			
+			.guige a {
+				position: absolute;
+				left: 50%;
+				top: 0rem;
+				margin-top: .1rem;
+			}
+			
+			.wnk {
+				left: 70% !important;
+				top: -.65rem !important;
+				margin-top: .1rem;
+			}
+			
+			.weui-cell {
+				padding: 10px 15px !important;
+				position: relative !important;
+				display: -webkit-box !important;
+				display: -webkit-flex !important;
+				display: flex !important;
+				-webkit-box-align: center !important;
+				-webkit-align-items: center !important;
+				align-items: center !important;
+			}
+			
+			.weui-input {
+				width: 100% !important;
+				border: 0 !important;
+				outline: 0 !important;
+				-webkit-appearance: none !important;
+				background-color: transparent !important;
+				font-size: inherit !important;
+				color: inherit !important;
+				height: 1.47058824em !important;
+				line-height: 1.47058824 !important;
+				margin-bottom: 0 !important;
+			}
+			
+			.weui-cell_switch {
+				padding-top: 6.5px !important;
+				padding-bottom: 6.5px !important;
+			}
+			
+			.weui-cell_switch>.weui-cell__bd {
+				line-height: 1.47058824;
+				font-size: 17px;
+				padding-left: 15px;
+				text-align: left;
+			}
+			
+			.weui-cells__title {
+				margin-top: .77em !important;
+				margin-bottom: .3em !important;
+				padding-left: 15px !important;
+				padding-right: 15px !important;
+				color: #999 !important;
+				font-size: 14px !important;
+			}
+			
+			.weui-cells__title+.weui-cells {
+				margin-top: 0 !important;
+			}
+			
+			.hide_wnk {
+				display: none !important;
+			}
+			
+			.show_wnk {
+				display: flex !important;
+			}
+			
+			.lunbo_photo_ul {
+				width: 96%;
+				height: auto;
+				overflow: hidden !important;
+				padding: 0 !important;
+				margin-left: 2%;
+			}
+			
+			.lunbo_photo_ul li {
+				width: 100% !important;
+				height: auto !important;
+				list-style: none !important;
+				text-align: center !important;
+				cursor: pointer !important;
+				overflow: hidden !important;
+				margin-top: 5px !important;
+			}
+			
+			#lunbo_photo_ul img {
+				height: 4rem;
+				width: 4rem;
+			}
+			
+			#lunbo_photo_ul>li {
+				width: 30%;
+			}
+		</style>
+	</head>
+
+	<body class="bgw">
+		<input type="hidden" id="commodities_id" value="-1">
+		<input type="hidden" id="specifications_id" value="-1">
+		<input type="file" accept="image/*" style="display: none;" name="ajaxFile" id="header_file" />
+		<!-- 头部STR -->
+		<div class="head">
+			<h1 id="title_head">添加商品(酒店类)</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+			<a id="addCommodity" class="submit">保存</a>
+		</div>
+		<div class="h88" style="margin-top: 1rem;"></div>
+		<ul class="commodity_information_ul">
+			<li>
+				<a class="value_name_tip">商品类型</a>
+				<div class="types_commodity">
+					<a class="type_commodity_checked">酒店住宿</a>
+				</div>
+			</li>
+
+			<li>
+				<a class="value_name_tip">商品名称</a>
+				<input type="text" value="" placeholder="请输入商品名称" class="text_input" id="name" />
+			</li>
+			<li>
+				<a class="value_name_tip">商品规格</a>
+				<div id="guige_div_1">
+					<div class="guige">
+						<div class="weui-cells weui-cells_form">
+							<div class="weui-cell">
+								<div class="weui-cell__hd">
+									<label class="weui-label">规格名称</label>
+								</div>
+								<div class="weui-cell__bd">
+									<input class="weui-input" type="text" placeholder="请输入规格名" id="guige_name_1" data-recording="1">
+								</div>
+							</div>
+
+							<div class="weui-cell">
+								<div class="weui-cell__hd">
+									<label class="weui-label">价格</label>
+								</div>
+								<div class="weui-cell__bd">
+									<input class="weui-input" type="number" placeholder="请输入规格价格" id="guige_price_1" data-recording="1">
+								</div>
+							</div>
+
+							<div class="weui-cell">
+								<div class="weui-cell__hd">
+									<label class="weui-label">每日数量</label>
+								</div>
+								<div class="weui-cell__bd">
+									<input class="weui-input" type="text" placeholder="请输入数量" id="guige_Inventory_1" data-recording="1">
+								</div>
+							</div>
+
+							<div class="weui-cell weui-cell_switch">
+								<div class="weui-cell__bd">库存无限制</div>
+								<div class="weui-cell__ft">
+									<input class="weui-switch kucun" type="checkbox" id="guige_Infinity_1" data-recording="1">
+								</div>
+							</div>
+							<div class="weui-cell weui-cell_access" name="donation_ratio_state_div" id="donation_ratio_div">
+								<div class="weui-cell__hd cell_adjust">消费赠送比例</div>
+								<div class="weui-cell__bd" style="text-align: end;" id="num_donation_ratio_1">5%</div>
+								<div class="weui-cell__ft"></div>
+							</div>
+							<p class="tips_guige_wnk_state" name="donation_ratio_state_tip">用户购买该规格并使用后,额外赠送<span id="gift_donation_ratio_1">0</span>现金券</p>
+							<br />
+							<div class="weui-cell weui-cell_switch">
+								<div class="weui-cell__bd">预计可取消</div>
+								<div class="weui-cell__ft">
+									<input class="weui-switch" type="checkbox" id="guige_cancel_reserve" data-recording="1" />
+								</div>
+							</div>
+							<div style="display: flex;padding:10px 15px;" id="guige_time_cancel_reserve_div">
+								<div class="weui-cell__hd cell_adjust">取消时间</div>
+								<div class="weui-cell__bd" style="text-align: end;">入住日<span id="guige_time_cancel_reserve">14:00</span>前</div>
+								<div class="weui-cell__ft"></div>
+							</div>
+
+							<div class="weui-cell weui-cell_access" id="guige_time_enter_div">
+								<div class="weui-cell__hd cell_adjust">入住时间</div>
+								<div class="weui-cell__bd" style="text-align: end;"><span id="guige_time_enter">14:00</span>后</div>
+								<div class="weui-cell__ft"></div>
+							</div>
+							<div class="weui-cell weui-cell_access" id="guige_time_check_out_div">
+								<div class="weui-cell__hd cell_adjust">退房时间</div>
+								<div class="weui-cell__bd" style="text-align: end;">次日<span id="guige_time_check_out">14:00</span>前</div>
+								<div class="weui-cell__ft"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<a class="value_name_tip">房型设施(<span class="tip_required">红色边框为必填内容</span>)</a>
+				<div class="facilities">
+
+					<div class="weui-flex">
+						<div class="weui-flex__item">
+							<p class="item_facilities" id="facilities_area">面积<br /><span id="facilities_area_content">-</span></p>
+						</div>
+						<div class="weui-flex__item">
+							<p class="item_facilities item_facilities_required" id="facilities_breakfast">早餐<br /><span id="facilities_breakfast_content">-</span></p>
+						</div>
+						<div class="weui-flex__item">
+							<p class="item_facilities" id="facilities_floor">楼层<br /><span id="facilities_floor_content">-</span></p>
+						</div>
+					</div>
+
+					<div class="weui-flex">
+						<div class="weui-flex__item">
+							<p class="item_facilities" id="facilities_windows">窗户<br /><span id="facilities_windows_content">-</span></p>
+						</div>
+						<div class="weui-flex__item">
+							<p class="item_facilities item_facilities_required" id="facilities_lives">可住<br /><span id="facilities_lives_content">-</span></p>
+						</div>
+						<div class="weui-flex__item">
+							<p class="item_facilities" id="facilities_air_conditioner">空调<br /><span id="facilities_air_conditioner_content">-</span></p>
+						</div>
+					</div>
+
+					<div class="weui-flex">
+						<div class="weui-flex__item" style="flex: 1;">
+							<p class="item_facilities" id="facilities_bathroom">卫浴<br /><span id="facilities_bathroom_content">-</span></p>
+						</div>
+						<div class="weui-flex__item" style="flex: 2;">
+							<p class="item_facilities" id="facilities_broadband">宽带<br /><span id="facilities_broadband_content">-</span></p>
+						</div>
+					</div>
+
+					<div class="weui-flex">
+						<div class="weui-flex__item">
+							<p class="item_facilities" id="facilities_type_bed">床型<br /><span id="facilities_type_bed_content">-</span></p>
+						</div>
+						<div class="weui-flex__item">
+							<p class="item_facilities item_facilities_required" id="facilities_size_bed">床尺寸<br /><span id="facilities_size_bed_content">-</span></p>
+						</div>
+						<div class="weui-flex__item">
+							<p class="item_facilities item_facilities_required" id="facilities_num_bed">床数<br /><span id="facilities_num_bed_content">-</span></p>
+						</div>
+					</div>
+
+					<div class="weui-flex">
+						<div class="weui-flex__item">
+							<p class="item_facilities" id="facilities_bathroom_matching">浴室配套<br /><span id="facilities_bathroom_matching_content">-</span></p>
+						</div>
+					</div>
+
+					<div class="weui-flex">
+						<div class="weui-flex__item">
+							<p class="item_facilities" id="facilities_electric">生活电器<br /><span id="facilities_electric_content">-</span></p>
+						</div>
+					</div>
+
+					<div class="weui-flex">
+						<div class="weui-flex__item">
+							<p class="item_facilities" id="facilities_media">媒体设备<br /><span id="facilities_media_content">-</span></p>
+						</div>
+					</div>
+
+					<div class="weui-flex">
+						<div class="weui-flex__item">
+							<p class="item_facilities" id="facilities_window_description">窗户说明<br /><span id="facilities_window_description_content">-</span></p>
+						</div>
+					</div>
+
+					<div class="weui-flex">
+						<div class="weui-flex__item">
+							<p class="item_facilities" id="facilities_room_features">房间特色<br /><span id="facilities_room_features_content">-</span></p>
+						</div>
+					</div>
+
+					<div class="weui-flex">
+						<div class="weui-flex__item">
+							<p class="item_facilities" id="facilities_others">其他设施<br /><span id="facilities_others_content">-</span></p>
+						</div>
+					</div>
+				</div>
+			</li>
+
+			<li>
+				<a class="value_name_tip">所属分类</a>
+				<select id="type_select"></select>
+			</li>
+
+			<li>
+				<a class="value_name_tip commodity_line_tag">是否上架</a>
+				<a class="line_commodity_state" id="line_commodity_state">(上架)</a>
+				<div class="mui-switch mui-active is_line_switch mui_switch_line">
+					<div class="mui-switch-handle"></div>
+				</div>
+			</li>
+
+			<li>
+				<a class="value_name_tip photo_choose_tag">商品图片</a>
+				<label class="choose_photo_button" id="choosePhoto">选择图片</label>
+				<div style="clear: both;"></div>
+				<!-- <img src="#" class="commodity_photo" id="commodity_photo" /> -->
+			</li>
+		</ul>
+
+		<ul class="weui-uploader__files" id="lunbo_photo_ul" style="margin-top: 10px;margin-left: 10px;"></ul>
+
+		<!--******************************************************-->
+		<!--**********************底部弹窗************************-->
+		<!--******************************************************-->
+		<!--底部popup房间面积-->
+		<div id="bottom_pop" class="weui-popup__container popup-bottom">
+			<div class="weui-popup__overlay"></div>
+			<div class="weui-popup__modal">
+				<div class="toolbar">
+					<div class="toolbar-inner">
+						<a href="javascript:;" class="picker-button close-popup" id="close_bottom_pop">不填写</a>
+						<div class="title_content">
+							<h1 class="title_botom_popup" id="title_bottom_pop">房间面积</h1>
+							<p class="tips_bottom_popup" id="tips_bottom_pop">提示内容</p>
+						</div>
+					</div>
+				</div>
+				<div class="modal-content">
+					<div class="input_div">
+						<span class="unit_input" id="unit_input">㎡</span>
+						<input id="input_bottom_pop" type="text" class="input_my" placeholder="" />
+					</div>
+					<div class="weui-grids" id="grids_bottom_pop">
+						<a href="javascript:;" class="weui-grid js_grid" data-id="dialog">
+							<p class="weui-grid__label grid_item_ratio">10</p>
+						</a>
+						<a href="javascript:;" class="weui-grid js_grid" data-id="dialog">
+							<p class="weui-grid__label grid_item_ratio">15</p>
+						</a>
+						<a href="javascript:;" class="weui-grid js_grid" data-id="dialog">
+							<p class="weui-grid__label grid_item_ratio grid_item_ratio_selected">20</p>
+						</a>
+						<a href="javascript:;" class="weui-grid js_grid" data-id="dialog">
+							<p class="weui-grid__label grid_item_ratio">25</p>
+						</a>
+						<a href="javascript:;" class="weui-grid js_grid" data-id="dialog">
+							<p class="weui-grid__label grid_item_ratio">30</p>
+						</a>
+						<a href="javascript:;" class="weui-grid js_grid" data-id="dialog">
+							<p class="weui-grid__label grid_item_ratio">35</p>
+						</a>
+					</div>
+					<div class="btn_confirm" id="confirm_bottom_pop">确定</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- UI插件 -->
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />
+
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/ajaxfileupload.js"></script>
+		<!--<script type="text/javascript" src="../../static/js/common/common.1.js" ></script>-->
+		<script type="text/javascript" src="../../static/js/common/common-mui.js"></script>
+		<script type="text/javascript" src="../../static/js/general_lib.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/goods/add_hotel.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/weui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+
+	</body>
+
+</html>

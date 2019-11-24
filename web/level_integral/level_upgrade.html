@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>商户等级升级</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/css/level_integral/level_upgrade.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css" />
+	</head>
+	<body style="background: white;">
+		<div class="head">
+			<h1>商户等级升级</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+		
+		<!-- 表单STR -->
+		<div class="pubform">
+		    <form>
+		        <div class="ftitle">可选等级</div>
+		        <div class="fgroup" id="wnk_buy_meal_div">
+		            <!--<label class="fradio level_label">
+		                <div class="level_div">
+			                <a>商户等级</a>
+			                <a>有效期：12月</a>
+			                <a>价格：1000元</a>
+			                <a>可获积分：1000积分</a>
+		                </div>
+		                <input type="radio" name="card_type" id="cjcard_radio">
+		                <span class="status"></span>
+		            </label>-->
+		        </div>
+		        <div class="ftitle">支付方式</div>
+		        <div class="fgroup">
+		            <label class="fradio" style="height: 50px;">
+		                <span class="icon wxpay"></span>
+		                <span class="fname">微信支付</span>
+		                <input type="radio" name="pay" id="wx_pay_radio" checked>
+		                <span class="status"></span>
+		            </label>
+		            
+		            <label class="fradio" style="height: 50px;">
+		                <span class="icon balance"></span>
+		                <span class="fname">余额支付</span>
+		                <input type="radio" name="pay" id="yue_pay_radio">
+		                <span class="status"></span>
+		            </label>
+		        </div>
+		        <div class="fhandle">
+		            <a class="fsubmit" onclick="arrgenHandelLevel()" style="margin-top: 10px;">升级</a>
+		        </div>
+		    </form>
+		</div>
+		<!-- 表单END -->
+		
+		<!-- UI插件 -->
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js" ></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/lib/fastclick.js"></script>
+		<script type="text/javascript" src="../../static/js/level_integral/level_upgrade.js" ></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+	</body>
+</html>

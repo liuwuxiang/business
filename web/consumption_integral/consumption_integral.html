@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>推广积分</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+	</head>
+
+	<body style="background: white;">
+		<div class="head">
+			<h1>推广积分</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+
+		<!-- 积分STR -->
+		<div class="jfhead">
+			<div class="desc">
+				<span class="tit">积分余额(个)</span>
+				<p class="num" id="consumption_integral_tag">0</p>
+			</div>
+			<div class="hadle">
+				<a class="help">
+					<!--帮助说明-->
+				</a>
+				<div class="buts">
+					<a class="b1" id="user_integral_recharge" style="width: 80px;">用户充值</a>
+					<a id="integral_exchange">兑换</a>
+				</div>
+			</div>
+		</div>
+		<!-- 积分END -->
+
+		<!-- Tab菜单 STR -->
+		<div class="pubtabmenu" id="pubtabmenu">
+			<div class="wrap">
+				<a id="integral_income" class="item" onclick="listOptionInit(0)">积分收入</a>
+				<a id="integral_expenditure" class="item" onclick="listOptionInit(1)">积分支出</a>
+			</div>
+		</div>
+		<!-- Tab菜单 END -->
+
+		<!-- 明细STR -->
+		<div class="condetaile">
+			<ul class="list">
+				<!--<li class="item">
+	        <div class="left">
+	          <span class="name">银币兑换</span>
+	          <span class="time">2018-05-21 10:59:22</span>
+	        </div>
+	        <div class="right">
+	          <span class="num down">-1800</span>
+	        </div>
+	      </li>-->
+			</ul>
+		</div>
+		<!-- 明细END -->
+
+		<!-- 积分为空 -->
+		<div class="publicnull" id="publicnull_tip">
+			<span class="icon jf"></span>
+			<p class="text" id="request_tip">暂无数据</p>
+		</div>
+
+		<!-- UI插件 -->
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/consumption_integral/consumption_integral.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+	</body>
+
+</html>

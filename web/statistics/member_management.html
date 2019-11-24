@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>会员管理</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/css/add_commodity.css" />
+		<link rel="stylesheet" href="../../static/css/statistics/bootstrap.min.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.min.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/css/statistics/member_management.css" />
+
+		<!--下拉菜单相关-->
+		<link rel="stylesheet" type="text/css" href="../../static/lib/drop-down-menu/css/common.css" />
+		<script type="text/javascript" src="../../static/lib/drop-down-menu/js/jquery.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/drop-down-menu/js/iscroll.js"></script>
+		<script type="text/javascript" src="../../static/lib/drop-down-menu/js/jquery.flexslider-min.js"></script>
+		
+	
+		
+	</head>
+
+	<body class="bgw" style="height: 100%!important;background-color: white!important;">
+		<!-- 头部STR -->
+		<div class="head">
+			<h1 id="title_tag">会员管理</h1>
+			<a href="javascript:;" id="search_icon" class="searchIcon" style="display:" ";"></a>
+			<div class="serch" id="search_box" style="display: none;">
+				<input type="text" id="search_content" placeholder="按姓名、电话搜索" style="line-height: .70rem;height: .70rem;">
+				<a class="searchsubmit">搜索</a>
+			</div>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+		<div class="screening">
+			<ul>
+				<li class="Brand" id="allMember">全部 </li>
+				<li class="Sort" id="sortMember">默认排序</li>
+			</ul>
+		</div>
+		<div class="h88"></div>
+		<!-- Category -->
+		<div class="Sort-eject Sort-height" id="paixu">
+			<ul class="Sort-Sort" id="paixu_ul">
+				<li onclick="Sorts(this)" style="color: #40E0D0;" id="sort_default" data-type="4" >默认排序</li>
+				<li onclick="Sorts(this)" id="sort_days_down" data-type="0" >剩余天数降序</li>
+				<li onclick="Sorts(this)" id="sort_days_up"   data-type="1" >剩余天数升序</li>
+				<li onclick="Sorts(this)" id="sort_time_down" data-type="2" >健身次数降序</li>
+				<li onclick="Sorts(this)" id="sort_time_up"   data-type="3" >健身次数升序</li>
+			</ul>
+		</div>
+		<!-- End Category -->
+
+		<!-- Category -->
+		<div class="Sort-eject Sort-height" id="type_choose">
+			<ul class="Sort-Sort" id="type_choose_ul">
+				<!--<li onclick="BusinessTypes(this)">全部分类1</li>-->
+				<li onclick="BusinessTypes(this)" style="color: #40E0D0;" id="all" data-type="-1">全部</li>
+				<li onclick="BusinessTypes(this)" id="man"   data-type="0" >男</li>
+				<li onclick="BusinessTypes(this)" id="woman" data-type="1" >女</li>
+			</ul>
+		</div>
+		<!-- End Category -->
+		
+		<!--会员列表-->
+		<div class="member_list">
+			<ul class="member_list_ul" id="member_list_ul">
+				<!-- <li class="member_list_li">
+					<img id="member_list_head" src="../../static/images/wnk_business/memberHeadDefault.png" />
+					<div class="member_list_info">
+						<div class="member_list_base_info">
+							<p id="member_name" class="member_name">姓名</p>
+							<img id="member_sex" class="member_sex" src="../../static/images/wnk_business/memberSexWoman.png" />
+							<p id="member_phone" class="member_phone">13366666888</p>
+						</div>
+						<p class="member_num_fitness">健身次数：<span id="member_num_fitness">0</span>次</p>
+						<p class="member_days_remaining">剩余天数：<span id="member_days_remaining">0</span>天</p>
+					</div>
+				</li> -->
+			</ul>
+			<div class="publicnull" id="publicnull_tip">
+				<span class="icon jf"></span>
+				<p class="text" id="request_tip">暂无数据</p>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<!-- UI插件 -->
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/city-picker.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/js/statistics/member_management.js"></script>
+		<!--下拉菜单点击事件处理-->
+		<script type="text/javascript" src="../../static/lib/drop-down-menu/js/other.js"></script>
+	</body>
+
+</html>

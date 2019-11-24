@@ -1,0 +1,204 @@
+#pop_container {
+	width: 0px;
+	height: 0px;
+	position: fixed;
+	top: 75%;
+	left: 50%;
+}
+
+.pop_window {
+	background-color: #4BA6F6;
+}
+
+.pop_gym_card_border {
+	height: auto;
+	text-align: center;
+	border-radius: 7px;
+}
+
+.pop_gym_card_border>div {
+	color: red;
+	text-align: center;
+	font-size: .5rem;
+	font-weight: bold;
+}
+
+
+/*移除muipop底部或顶部三角,需要在删除此代码*/
+
+.mui-popover .mui-popover-arrow:after {
+	width: 0px;
+}
+
+
+/*文字旋转*/
+
+.test {
+	margin: 30px;
+	width: 200px;
+	height: 100px;
+	/* Rotate div */
+	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	/* Internet Explorer */
+	-moz-transform: rotate(-45deg);
+	/* Firefox */
+	-webkit-transform: rotate(-45deg);
+	/* Safari 和 Chrome */
+	-o-transform: rotate(-45deg);
+	/* Opera */
+}
+
+.pop_head {
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+
+.pop_head .pop_status {
+	width: 1rem;
+	height: 1rem;
+	text-align: center;
+}
+
+.pop_head .pop_status img {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.pop_head .pop_status span {
+	position: absolute;
+	left: 0;
+	top: .225rem;
+	font-size: .22rem;
+	color: white;
+	white-space: nowrap;
+	transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	/* Internet Explorer */
+	-moz-transform: rotate(-45deg);
+	/* Firefox */
+	-webkit-transform: rotate(-45deg);
+	/* Safari 和 Chrome */
+	-o-transform: rotate(-45deg);
+	/* Opera */
+}
+
+.pop_head #pop_title {
+	color: white;
+	font-size: .38rem;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.pop_head .pop_close {
+	width: .85rem;
+	height: .85rem;
+	padding: .28rem;
+}
+
+.pop_body {
+	padding: .2rem;
+	margin-top: .2rem;
+	margin-bottom: .2rem;
+}
+
+.pop_body .member_name {
+	display: flex;
+	align-items: center;
+}
+
+.member_name #pop_member_head {
+	width: 1rem;
+	height: 1rem;
+	margin: 0 .15rem;
+}
+
+.member_name #pop_member_name {
+	color: white;
+	font-size: .35rem;
+	white-space: nowrap;
+	margin-top: .2rem;
+}
+
+.member_name #pop_member_sex {
+	width: .38rem;
+	height: .38rem;
+	margin: 0 .1rem;
+}
+
+.pop_body .pop_member_dueto{
+	color: white;
+	font-size: .38rem;
+	display: block;
+	margin: .2rem 0;
+	text-align: start;
+}
+
+.pop_leave_time .divider{
+	height: 1px;
+	background-color: white;
+}
+
+.pop_leave_time .pop_title_enter_time{
+	margin-top: .1rem;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.pop_title_enter_time>img{
+	width: .4rem;
+	height: .4rem;
+}
+
+.pop_title_enter_time>p{
+	color: white;
+	font-size: .3rem;
+	margin-top: .1rem;
+	margin-left: .1rem;
+}
+
+.pop_leave_time #pop_enter_time{
+	display: block;
+	color: white;
+	font-size: .35rem;
+	text-align: start;
+	margin: .15rem .2rem;
+	white-space: nowrap;
+}
+
+#pop_confirm{
+	background-color: #99CC00;
+	width: 100%;
+	padding: .25rem;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-bottom-left-radius: 7px;
+	border-bottom-right-radius: 7px;
+	text-align: center;
+}
+
+#pop_confirm #pop_icon_confirm{
+	width: .58rem;
+	height: .58rem;
+	margin: 0 .1rem;
+}
+
+#pop_confirm #pop_txt_confirm{
+	color: white;
+	font-size: .4rem;
+	margin: 0 .1rem;
+}
+
+

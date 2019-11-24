@@ -1,0 +1,157 @@
+<!DOCTYPE  html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>店铺信息</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.min.css" />
+		<link rel="stylesheet" href="../../static/css/add_commodity.css" />
+		<link rel="stylesheet" href="../../static/css/my/shop_information.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<!-- UI插件 -->
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.min.css" />
+		
+		<link rel="stylesheet" href="../../static/css/my/shop_information.css" />
+		
+
+		<style>
+			
+		</style>
+
+	</head>
+
+	<body class="bgw">
+		
+			<!-- 
+					<div class="search_div weui-search-bar">
+						<input type="search" id="mapsSearch" class="mui-input-clear" placeholder="请输入店铺地点">
+						<a href="javascript:" class="mui-button-row" id="searchCancel">确定</a>
+					</div>
+					<div id="map"></div>
+					 -->
+					<input type="file" accept="image/*" style="display: none;" name="ajaxFile" id="header_file" />
+					<!-- 头部STR -->
+					<div class="head">
+						<h1>店铺信息</h1>
+						<a href="javascript:void(0);" id="back" class="back"></a>
+						<a id="setInformationData" class="submit">设置</a>
+					</div>
+					<div class="h88" style="margin-top: 1rem;"></div>
+			
+					<ul class="commodity_information_ul" style="z-index: 1;">
+						<li>
+							<a class="value_name_tip photo_choose_tag">展示图</a>
+							<label class="choose_photo_button" id="choosePhotoCover">选择图片</label>
+							<a style="clear: both;display: block;"></a>
+							<img src="#" style="display: block;width: auto;max-width: 100%;height: auto;max-height: 100px;margin-top: 15px;" id="store_cover_photo"/>
+							
+						</li>
+						
+						<li>
+							<a class="value_name_tip">店铺名称</a>
+							<input type="text" value="" placeholder="请输入店铺名称" class="text_input" id="store_name" />
+						</li>
+			
+						<li>
+							<a class="value_name_tip">店铺地址</a>
+							<input type="text" value="" placeholder="请输入店铺地址" class="text_input" id="address" />
+						</li>
+						<li>
+							<a class="value_name_tip">正价展示</a>
+							<p style="display: block;width: 100%;height: auto;text-align: left;line-height: 12px;font-size: 12px;">设置后用户在店铺列表将会看到正价和会员价的展示</p>
+							<p style="display: block;width: 100%;height: auto;text-align: left;line-height: 12px;font-size: 12px;">仅为展示用途,吸引客户</p>
+							<input type="number" value="" placeholder="请输入店铺正价" class="text_input" id="positive_price" />
+						</li>
+			
+						<li>
+							<a class="value_name_tip">地图标注</a>
+							<input type="text" value="" placeholder="请选择商家位置" class="text_input" id="pos" readonly="readonly" />
+							<input type="hidden" id="lat" />
+							<input type="hidden" id="longt" />
+							<img src="../../static/images/wnk_business/arrow_right.png" class="arrow_img"/>
+						</li>
+						
+						
+						<li id="wnk_business_tag_li">
+							<a class="value_name_tip">商家标签</a>
+							<input id="business_tag" type="text" placeholder="请选择商家标签" class="text_input"  readonly="readonly" />
+							<input type="hidden" name="business_tag" />
+							<img src="../../static/images/wnk_business/arrow_right.png" class="arrow_img"/>
+						</li>
+						
+			
+						<li>
+							<a class="value_name_tip">营业时间</a>
+							<input type="text" placeholder="请选择营业时间 "  id="hours" class="text_input" />
+							<img src="../../static/images/wnk_business/arrow_right.png" class="arrow_img"/>
+						</li>
+			<!-- 
+						<li>
+							<a class="value_name_tip">特色内容</a>
+							<input type="text" placeholder="后台设定特色内容" class="text_input" id="teseContent" readonly="readonly" />
+							<input type="hidden" name="teseContent" />
+							
+						</li>
+			
+						<li>
+							<a class="value_name_tip">服务内容</a>
+							<input type="text" placeholder="后台设定服务内容" value="111" class="text_input" id="fuwuContent" readonly="readonly" />
+							<input type="hidden" name="fuwuContent" />
+						</li> -->
+						
+						<li>
+							<a class="value_name_tip">店铺区域</a>
+							<input type="text" placeholder="请选择商家区域" class="text_input" id="area" readonly="readonly" />
+							<input type="hidden" name="area" />
+							<img src="../../static/images/wnk_business/arrow_right.png" class="arrow_img"/>
+						</li>
+			
+						<li>
+							<a class="value_name_tip">联系电话</a>
+							<input type="number" value="" placeholder="请输入店铺联系电话" class="text_input" id="mobile" />
+						</li>
+			
+						<li>
+							<a class="value_name_tip">活动优惠</a>
+							<textarea class="text_textarea" placeholder="请输入活动优惠" id="store_describe"></textarea>
+						</li>
+						<li>
+							<a class="value_name_tip photo_choose_tag">滚动图片(最多三张)</a>
+							<label class="choose_photo_button" id="choosePhoto">选择图片</label>
+						</li>
+					</ul>
+					
+					<ul class="weui-uploader__files" id="lunbo_photo_ul" style="margin-top: 10px;margin-left: 10px;"></ul>
+					
+					<!--<ul class="lunbo_photo_ul" id="lunbo_photo_ul"></ul>-->
+
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/ajaxfileupload.js"></script>
+		<!-- <script type="text/javascript" src="../../static/js/common/common1.js"></script> -->
+		<script type="text/javascript" src="../../static/js/common/common-mui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.zoom.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.previewimage.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/my/shop_information.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+
+	</body>
+
+</html>

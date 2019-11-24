@@ -1,0 +1,73 @@
+html,body{
+	background: white;
+	padding: 0;
+	margin: 0;
+}
+
+.refresh_div{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+
+.weui-pull-to-refresh__layer{
+	z-index: 0;
+}
+
+.header_arrow_more{
+	/*background: red;*/
+	position: absolute;
+	right: 10px;
+	top: 35px;
+}
+
+.weui-badge{
+	width: .33rem !important;
+	height: .33rem !important;
+	border-radius: .15rem !important;
+	line-height: .37rem !important;
+	margin-top: .22rem !important;
+	color: white !important;
+	display: none;
+}
+
+.server_and_features{
+	background-color: #0B8FFE;
+	width: 100%;
+	height: auto;
+	margin: 0;
+	padding: 1px 0;
+	padding-bottom: .8rem;
+	text-align: start; 
+}
+
+.server_and_features div{
+	display: flex;
+	align-items: center;
+	margin: 0 .2rem;
+	/*display: none;*/
+}
+
+.content_server .server_item{
+	background-color: #FCD692;
+	border: solid 1px white;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	font-size: .24rem;
+	font-weight: bold;
+	padding: 0 2px;
+	margin: 1px 2px;
+}
+
+.content_features .features_item{
+	background-color: #9DD3FA;
+	border: solid 1px white;
+	border-radius: 5px;
+	text-align: center;
+	color: white;
+	font-size: .24rem;
+	font-weight: bold;
+	padding: 0 2px;
+	margin: 2px;
+}

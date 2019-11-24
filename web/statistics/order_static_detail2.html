@@ -1,0 +1,133 @@
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>销售分析</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/css/order/orders.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css" />
+		<link rel="stylesheet" href="../../static/css/statistics/order_static_detail2.css" />
+	</head>
+	<body class="bgw" style="background-color: #efeff4 !important;">
+		<!-- 头部STR -->
+		<div class="head">
+			<h1 id="title_tag">销售分析</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+		<div class="mui-content">
+			<div class="weui-cells__title" style="padding-top: 10px;">数据概况</div>
+			<div class="mui-card">
+				<div class="mui-card-content header">
+					<p>商品总量(件)</p>
+					<span id="commodityTotal" style="font-size: .8rem;">0</span>
+				</div>
+				<div class="mui-card-content">
+					<ul>
+						<li class="analysis_record">
+							<p>销售总量</p>
+							<span id="salesTotal">0</span>
+						</li>
+						<li class="analysis_record">
+							<p>交易笔数</p>
+							<span id="transactionTotal">0</span>
+						</li>
+						<li class="analysis_record">
+							<p>购买人次</p>
+							<span id="buyTotal">0</span>
+						</li>
+					</ul>
+
+				</div>
+			</div>
+			<div class="weui-cells__title">销售构成</div>
+			<div class="mui-card">
+				<div class="mui-card-content">
+					<table>
+						<thead>
+							<tr>
+								<th>商品</th>
+								<th>销量</th>
+								<th>交易笔数</th>
+							</tr>
+						</thead>
+						<tbody id="salesConstitute">
+							<!-- <tr>
+								<td>测试商品</td>
+								<td>10</td>
+								<td>200</td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="weui-cells__title">交易笔数构成(已入账)</div>
+			<div class="mui-card" style="margin-bottom: 0;">
+				<div class="mui-card-content">
+					<table>
+						<thead>
+							<tr>
+								<th>商品</th>
+								<th>销量</th>
+								<th>总额(元)</th>
+							</tr>
+						</thead>
+						<tbody id="transactionConstitute">
+							<!-- <tr>
+								<td>测试商品</td>
+								<td>10</td>
+								<td>200</td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+			
+			<div class="weui-cells__title">交易笔数构成(待入账)</div>
+			<div class="mui-card" style="margin-bottom: 0;">
+				<div class="mui-card-content">
+					<table>
+						<thead>
+							<tr>
+								<th>商品</th>
+								<th>销量</th>
+								<th>总额(元)</th>
+							</tr>
+						</thead>
+						<tbody id="waitAccountEntry">
+							<!-- <tr>
+								<td>测试商品</td>
+								<td>10</td>
+								<td>200</td>
+							</tr> -->
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/js/general_lib.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="http://res.wx.qq.com/open/js/jweixin-1.1.0.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script type="text/javascript" src="../../static/js/statistics/order_static_detail2.js"></script>
+	</body>
+</html>

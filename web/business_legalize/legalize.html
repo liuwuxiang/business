@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>商户认证</title>
+		<link rel="stylesheet" href="../../static/css/my/my.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css" />
+
+		<style>
+			.img-jiaobiao{
+				top: -0.1rem !important;
+				left:78% !important;
+				background:red;
+			}
+			.weui-input {
+					margin-bottom: 0 !important;
+					width: 100% !important;
+					border: 0 !important;
+					outline: 0 !important;
+					-webkit-appearance: none !important;
+					background-color: transparent !important;
+					font-size: inherit !important;
+					color: inherit !important;
+					height: 1.47058824em !important;
+					line-height: 1.47058824 !important;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- 法人身份证正面 -->
+		<input type="hidden" id="id_card_facade" />
+		<!-- 法人身份证背面 -->
+		<input type="hidden" id="id_card_rear" />
+		<!-- 营业执照 -->
+		<input type="hidden" id="business_license" />
+		<!-- 许可证 -->
+		<input type="hidden" id="license" />
+
+		<div class="mui-content">
+			<!-- 头部STR -->
+			<div class="head">
+				<h1 style="color: black;">我要认证</h1>
+				<a id="addBusinessLegalize" class="submit">提交</a>
+			</div>
+			<div class="h88"></div>
+			<!-- 头部END -->
+			<div class="weui-cells weui-cells_form" style="margin: 0 !important;">
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">法人联系电话</label></div>
+					<div class="weui-cell__bd">
+						<input id="phone" class="weui-input" type="number" pattern="[0-9]*" placeholder="请输入法人联系电话">
+					</div>
+				</div>
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<div class="weui-uploader">
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__bd">
+									<h4 class="weui-media-box__title">1.手持身份证正面</h4>
+									<p class="weui-media-box__desc">需清晰展示人物及五官及身份证信息.</p>
+								</div>
+							</div>
+							<div class="weui-uploader__bd">
+
+								<ul class="weui-uploader__files" id="header_file_1_ul">
+									<!-- <li class="weui-uploader__file" style="background-image:url(http://192.168.0.111:8080/property_system/images/getimage.do?imageid=98a090e7-600d-4552-9073-5cd24472fa20IMG_20180712_080851.JPG)">
+										<span id="header_file_1_img" class="mui-badge mui-badge-purple img-jiaobiao">x</span>
+									</li> -->
+
+								</ul>
+								<!--<div class="weui-uploader__input-box" id="header_file_1_div">
+									<input id="header_file_1" name="ajaxFile" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+								</div>-->
+								
+								<a id="header_file_1" class="weui-uploader__input-box"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells weui-cells_form" style="margin: 0 !important;">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<div class="weui-uploader">
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__bd">
+									<h4 class="weui-media-box__title">2.手持身份证背面</h4>
+									<p class="weui-media-box__desc">需清晰展示人物及五官及身份证信息.</p>
+								</div>
+							</div>
+							<div class="weui-uploader__bd">
+								<ul class="weui-uploader__files" id="header_file_2_ul"></ul>
+								<!--<div class="weui-uploader__input-box" id="header_file_2_div">
+									<input id="header_file_2" name="ajaxFile" class="weui-uploader__input" type="file" accept="image/*">
+								</div>-->
+								
+								<a id="header_file_2" class="weui-uploader__input-box"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="weui-cells weui-cells_form" style="margin: 0 !important;">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<div class="weui-uploader">
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__bd">
+									<h4 class="weui-media-box__title">3.营业执照</h4>
+									<p class="weui-media-box__desc">需文字清晰、边框完整、露出国徽.</p>
+								</div>
+							</div>
+							<div class="weui-uploader__bd">
+								<ul class="weui-uploader__files" id="header_file_3_ul"></ul>
+								<!--<div class="weui-uploader__input-box" id="header_file_3_div">
+									<input id="header_file_3" name="ajaxFile" class="weui-uploader__input" type="file" accept="image/*">
+								</div>-->
+								<a id="header_file_3" class="weui-uploader__input-box"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="weui-cells weui-cells_form" style="margin: 0 !important;">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<div class="weui-uploader">
+							<div class="weui-media-box weui-media-box_appmsg">
+								<div class="weui-media-box__bd">
+									<h4 class="weui-media-box__title">4.许可证</h4>
+									<p class="weui-media-box__desc">内容要清晰,可用餐饮服务许可证、食品流通许可证等市场监督局下发的证件替代.如果商家和餐饮食品有关,必须要上传许可证项</p>
+								</div>
+							</div>
+							<div class="weui-uploader__bd">
+								<ul class="weui-uploader__files" id="header_file_4_ul"></ul>
+								<!--<div class="weui-uploader__input-box" id="header_file_4_div">
+									<input id="header_file_4" name="ajaxFile" class="weui-uploader__input" type="file" accept="image/*">
+								</div>-->
+								<a id="header_file_4" class="weui-uploader__input-box"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript" src="../../static/js/main.js"></script>
+	<script type="text/javascript" src="../../static/js/main.check.js"></script>
+	<script type="text/javascript" src="../../static/js/common/common.js"></script>
+	<script type="text/javascript" src="../../static/js/common/common-mui.js"></script>
+	<script type="text/javascript" src="../../static/js/common/ajaxfileupload.js"></script>
+	<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+	<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+	<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+	<script type="text/javascript" src="../../static/js/navigator.js"></script>
+	<script type="text/javascript" src="../../static/js/business_legalize/legalize.js"></script>
+</html>

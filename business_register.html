@@ -1,0 +1,145 @@
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>商户注册</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="./static/lib/mui/css/mui.min.css" />
+		<link rel="stylesheet" href="./static/css/shop_information.css" />
+		<link rel="stylesheet" href="./static/css/add_commodity.css" />
+		<link rel="stylesheet" href="./static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="./static/css/common/common.css" />
+		<!-- UI插件 -->
+		<link rel="stylesheet" href="./static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="./static/lib/plus/css/jquery-weui.min.css" />-->
+		<link rel="stylesheet" href="static/lib/mui/css/mui.picker.css" />
+		<link rel="stylesheet" href="static/lib/mui/css/mui.poppicker.css" />
+
+		<style>
+			.weui-input {
+				margin-bottom: 0 !important;
+				width: 100% !important;
+				border: 0 !important;
+				outline: 0 !important;
+				-webkit-appearance: none !important;
+				background-color: transparent !important;
+				font-size: inherit !important;
+				color: inherit !important;
+				height: 1.47058824em !important;
+				line-height: 1.47058824 !important;
+			}
+		</style>
+
+	</head>
+
+	<body class="bgw">
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>商户注册</h1>
+			<a onclick="javascript:mui.back();" id="back" class="back"></a>
+			<a id="businessRegister" class="submit">提交</a>
+		</div>
+		<div class="h88"></div>
+		
+		<div class="mui-content">
+
+			<div class="weui-cells__title">推荐信息:</div>
+			<div class="weui-cells weui-cells_form">
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">推荐码</label></div>
+					<div class="weui-cell__bd">
+						<input id="recommend_mobile" class="weui-input" type="tel" maxlength="11" placeholder="请输入推荐商家手机号码">
+					</div>
+				</div>
+			</div>
+
+			<div class="weui-cells__title">基础信息:</div>
+			<div class="weui-cells weui-cells_form">
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">店铺名称</label></div>
+					<div class="weui-cell__bd">
+						<input id="store_name" class="weui-input" type="text" placeholder="请输入店铺名称">
+					</div>
+				</div>
+
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">店铺分类</label></div>
+					<div class="weui-cell__bd">
+						<input id="business_type_select" class="weui-input" type="text" placeholder="请选择店铺分类" readonly="readonly">
+						<input id="business_type_select_value" type="hidden" />
+					</div>
+				</div>
+
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">店铺区域</label></div>
+					<div class="weui-cell__bd">
+						<input id="area_select" class="weui-input" type="text" placeholder="请选择店铺区域" readonly="readonly">
+					</div>
+				</div>
+				
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">店铺地址</label></div>
+					<div class="weui-cell__bd">
+						<input id="address" class="weui-input" type="text" placeholder="请选择店铺地址">
+					</div>
+				</div>
+
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">登录手机号</label></div>
+					<div class="weui-cell__bd">
+						<input id="login_account" class="weui-input" type="tel" maxlength="11" placeholder="请输入登录手机号">
+					</div>
+				</div>
+
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">联系人</label></div>
+					<div class="weui-cell__bd">
+						<input id="contact_name" class="weui-input" type="text" placeholder="请输入联系人姓名">
+					</div>
+				</div>
+
+				<div class="weui-cell">
+					<div class="weui-cell__hd"><label class="weui-label">联系电话</label></div>
+					<div class="weui-cell__bd">
+						<input id="mobile" class="weui-input" type="tel"  maxlength="11" placeholder="请输入联系电话">
+					</div>
+				</div>
+			</div>
+
+			<div class="weui-cells__title">店铺描述</div>
+			<div class="weui-cells weui-cells_form">
+				<div class="weui-cell">
+					<div class="weui-cell__bd">
+						<textarea id="store_describe" class="weui-textarea" placeholder="请输入店铺描述" rows="3"></textarea>
+						<div class="weui-textarea-counter"><span>0</span>/200</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+		
+
+		<script type="text/javascript" src="./static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="./static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="./static/js/common/common.js"></script>
+		<script type="text/javascript" src="./static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="./static/lib/mui/js/mui.picker.js"></script>
+		<script type="text/javascript" src="./static/lib/mui/js/mui.poppicker.js"></script>
+		<script type="text/javascript" src="./static/js/main.js"></script>
+		<script type="text/javascript" src="./static/js/common/toast.js"></script>
+		<script type="text/javascript" src="./static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="./static/lib/plus/js/weui.min.js"></script>
+		<script type="text/javascript" src="./static/js/navigator.js"></script>
+		<script type="text/javascript" src="./static/js/business_register.js"></script>
+	</body>
+
+</html>

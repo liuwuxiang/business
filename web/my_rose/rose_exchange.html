@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<title>玫瑰兑换</title>
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+		
+		
+	</head>
+	<body>
+		<div class="head">
+			<h1>玫瑰兑换</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+		</div>
+		<div class="h88"></div>
+		
+		  <!-- 通用表单 -->
+		  <div class="pubform">
+		    <form>
+		      <div class="fgroup">
+		        <label class="fitem">
+		          <span class="fname">兑换个数</span>
+		          <input class="ftext" id="withdraw_number" type="number" placeholder="请填写玫瑰兑换个数" style="line-height: .8rem;">
+		        </label>
+		        <label class="fitem">
+		          <span class="fname">金额</span>
+		          <p class="finfo">可兑换<span id="count_amount">0</span>元人民币</p>
+		        </label> 
+		        <label class="fitem">
+		          <span class="fname">到账金额</span>
+		          <p class="finfo">到账<span id="receipts_amount">0</span>元人民币</p>
+		        </label>       
+		      </div>
+		      <div class="fhandle">
+		        <a class="fsubmit" id="fsubmit" onclick="submitWithdraw()">兑换</a>
+		      </div>
+		    </form>
+		  </div>
+		
+		<!-- UI插件 -->
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js" ></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/my_rose/rose_exchange.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script type="text/javascript">
+		    $(function(){
+		        $('#withdraw_number').bind('input propertychange', function() {
+		            inputChange($(this).val());
+		        });
+		
+		    })
+		  </script>
+	</body>
+</html>

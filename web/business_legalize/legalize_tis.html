@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>商户认证</title>
+		<link rel="stylesheet" href="../../static/css/my/my.css" />
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css" />legalize_tip
+		<link rel="stylesheet" href="../../static/css/business_legalize/legalize_tip.css" />
+
+		<style>
+			img {
+				width: 100%;
+				height: auto;
+			}
+			.weui-panel.weui-panel_access {
+				margin-top: -10px !important;
+			}
+			.legalize-tis{
+				text-align: center;
+				background: #FFF;
+				padding-top: 3px;
+			}
+			.weui-media-box__desc{
+				display: -webkit-box;
+				-webkit-box-orient: vertical;
+				-webkit-line-clamp: 3;
+			}
+		</style>
+
+	</head>
+
+	<body>
+		<div class="mui-content">
+			<!-- 头部STR -->
+			<div class="head">
+				<h1 style="color: black;">我要认证</h1>
+			</div>
+			<!-- 头部END -->
+			<div class="h88"></div>
+			<div class="weui-panel weui-panel_access" style="margin-top: 0;">
+				<div class="weui-media-box weui-media-box_appmsg">
+					<div class="weui-media-box__bd">
+						<h4 class="weui-media-box__title">1.法人手持身份证照</h4>
+						<p class="weui-media-box__desc">需清晰展示人物及五官及身份证信息,需拍摄手持身份证正、反两张</p>
+					</div>
+				</div>
+				<img class="" weui-media-box__thumb" src="../../static/images/wnk_business/id_card_positive.jpg">
+			</div>
+
+			<div class="weui-panel weui-panel_access" style="margin-top: 0;">
+				<div href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+					<div class="weui-media-box__bd">
+						<h4 class="weui-media-box__title">2.营业执照</h4>
+						<p class="weui-media-box__desc">需文字清晰、边框完整、露出国徽</p>
+					</div>
+				</div>
+			</div>
+			<img class="" weui-media-box__thumb" src="../../static/images/wnk_business/yiyezhizhang.jpg">
+
+			<div class="weui-panel weui-panel_access" style="margin-top: 0;">
+				<div href="javascript:void(0);" class="weui-media-box weui-media-box_appmsg">
+					<div class="weui-media-box__bd">
+						<h4 class="weui-media-box__title">3.许可证</h4>
+						<p class="weui-media-box__desc">需文字清晰、边框完整,可用餐饮服务许可证、食品流通许可证等市场监督局下发的证件替代.如果商家和餐饮食品有关,必须要上传许可证项</p>
+					</div>
+				</div>
+				<img class="" weui-media-box__thumb" src="../../static/images/wnk_business/xukezheng.jpg">
+			</div>
+
+			<div class="legalize-tis">
+				<div class="mui-input-row">
+					<span>认证前请准备好以上材料</span>
+				</div>
+					<div class="mui-input-row mui-radio mui-left" style="margin-bottom: 10px;">
+						<img src="../../static/images/wnk_business/no_check.png" id="xieyi_checkbox" onclick="chooseXieyi()"/>
+						<label id="ruzhu_xieyi">我已阅读并同意</label>
+						<a id="read_xieyi">《商家入驻协议》</a>
+						<!--<input type="radio" id="xieyi"  >-->
+					</div>
+				<button type="button" class="mui-btn mui-btn-block mui-btn-outlined" id="ok">下一步</button>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+	<script type="text/javascript" src="../../static/js/main.js"></script>
+	<script type="text/javascript" src="../../static/js/main.check.js"></script>
+	<script type="text/javascript" src="../../static/js/common/common.js"></script>
+	<script type="text/javascript" src="../../static/js/common/common-mui.js"></script>
+	<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.min.js"></script>
+	<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+	<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+	<script type="text/javascript" src="../../static/js/navigator.js"></script>
+	<script type="text/javascript" src="../../static/js/business_legalize/legalize_tis.js"></script>
+
+</html>

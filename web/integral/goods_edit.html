@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Language" content="zh-CN">
+		<meta name="keywords" content="">
+		<meta name="description" content="">
+		<meta name="copyright" content="" />
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta content="black" name="apple-mobile-web-app-status-bar-style">
+		<meta content="telephone=no" name="format-detection">
+		<link rel="stylesheet" href="../../static/css/common/common.css" />
+		<link rel="stylesheet" href="../../static/lib/hui/css/hui.css" />
+		<link rel="stylesheet" href="../../static/lib/mui/css/mui.css" />
+		<!-- UI插件 -->
+		<link rel="stylesheet" href="../../static/lib/plus/lib/weui.min.css" />
+		<!--<link rel="stylesheet" href="../../static/lib/plus/css/jquery-weui.min.css" />-->
+		<title>积分系统-商品管理</title>
+		<style>
+			.weui-input {
+				margin-bottom: 0 !important;
+				width: 100% !important;
+				border: 0 !important;
+				outline: 0 !important;
+				-webkit-appearance: none !important;
+				background-color: transparent !important;
+				font-size: inherit !important;
+				color: inherit !important;
+				height: 1.47058824em !important;
+				line-height: 1.47058824 !important;
+				padding: 0 !important;
+			}
+			
+			.img-jiaobiao {
+				top: -0.1rem !important;
+				left: 60% !important;
+				background: none;
+			}
+			.myBadgeposition {
+				position:relative;
+				top: -2rem;
+				left: 1.4rem;
+			}
+			
+			#uploaderFiles img {
+				height: 1.6rem;
+				width: 1.6rem;
+			}
+			.weui-uploader__bd{
+				overflow:inherit !important;
+			}
+		</style>
+	</head>
+
+	<body class="bgw">
+
+		<!-- 头部STR -->
+		<div class="head">
+			<h1>积分系统-商品管理</h1>
+			<a href="javascript:void(0);" id="back" class="back"></a>
+			<a id="addIntegralGoods" class="submit">保存</a>
+		</div>
+		<div class="h88"></div>
+
+		<div class="weui-cells weui-cells_form">
+
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<div class="weui-uploader">
+						<div class="weui-uploader__hd">
+							<p class="weui-uploader__title">商品大图</p>
+						</div>
+						<div class="weui-uploader__bd">
+							<ul class="weui-uploader__files" id="uploaderFiles">
+							</ul>
+							<!--<div class="weui-uploader__input-box">
+								<input name="ajaxFile" id="header_file" class="weui-uploader__input" type="file" accept="image/*" multiple="">
+							</div>-->
+							<a id="fileUpload" class="weui-uploader__input-box"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<input type="hidden" id="img">
+
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">商品名称</label></div>
+				<div class="weui-cell__bd">
+					<input id="name" class="weui-input" type="text" placeholder="请输入分类名称">
+				</div>
+			</div>
+
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">商品简介</label></div>
+				<div class="weui-cell__bd">
+					<input id="synopsis" class="weui-input" type="text" placeholder="请输入商品简介" />
+				</div>
+			</div>
+
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">商品价格</label></div>
+				<div class="weui-cell__bd">
+					<input id="price" class="weui-input" type="number" placeholder="请输入商品价格"/>
+					<!--<input id="synopsis" class="weui-input" type="text" placeholder="请输入商品简介" />-->
+				</div>
+			</div>
+
+			<div class="weui-cell weui-cell_switch">
+				<div class="weui-cell__bd">是否启用</div>
+				<div class="weui-cell__ft">
+					<input id="is_checked" class="weui-switch" type="checkbox">
+				</div>
+			</div>
+
+			<div class="weui-cell">
+				<div class="weui-cell__hd"><label class="weui-label">商品分类</label></div>
+				<div class="weui-cell__bd">
+					<input name="type" id="type_btn" class="weui-input" type="text" readonly placeholder="请选择商品分类">
+				</div>
+			</div>
+
+			<input type="hidden" id="type">
+
+			<div class="weui-cell weui-cell_switch">
+				<div class="weui-cell__bd">商品详情</div>
+			</div>
+
+			<div class="weui-cell">
+				<div class="weui-cell__bd">
+					<textarea id="detail" class="weui-textarea" placeholder="请输入商品详情" rows="3"></textarea>
+					<div class="weui-textarea-counter"><span id="textMaxNuber">0</span>/200</div>
+				</div>
+			</div>
+
+		</div>
+<!-- 
+		<div class="memmenu" style="margin-top: 0;border-width: 1px;">
+			<a href="javascript:void(0);" class="weui-btn weui-btn_primary" id="addIntegralGoods">保存修改</a>
+		</div> -->
+
+		<script type="text/javascript" src="../../static/lib/jquery/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/common.js"></script>
+		<script type="text/javascript" src="../../static/lib/mui/js/mui.min.js"></script>
+		<script type="text/javascript" src="../../static/lib/hui/js/hui.js"></script>
+		<script type="text/javascript" src="../../static/js/common/toast.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/jquery-weui.js"></script>
+		<script type="text/javascript" src="../../static/lib/plus/js/weui.min.js"></script>
+		<script src="//res.wx.qq.com/open/libs/weuijs/1.0.0/weui.min.js"></script>
+		<script type="text/javascript" src="../../static/js/common/ajaxfileupload.js"></script>
+		<script type="text/javascript" src="../../static/js/main.js"></script>
+		<script type="text/javascript" src="../../static/js/main.check.js"></script>
+		<script type="text/javascript" src="../../static/js/integral/goods_edit.js"></script>
+		<script type="text/javascript" src="../../static/js/navigator.js"></script>
+		<script>
+			$('#detail').bind('input propertychange', function() {
+				var val = $(this).val();
+				var len = 0;
+				for(var i = 0; i < val.length; i++) {
+					var a = val.charAt(i);
+					if(a.match(/[^\x00-\xff]/ig) != null) {
+						len += 1;
+					} else {
+						len += 1;
+					}
+				}
+				$('#textMaxNuber').html(len);
+			})
+		</script>
+	</body>
+
+</html>
